@@ -1,3 +1,9 @@
 [user]
 	name = Takeshi Itami
 	email = tksh.itm@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+	df = diff
