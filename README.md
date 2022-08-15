@@ -8,5 +8,5 @@
 
 ```
 git clone git@github.com:czrd/dotfiles.git
-cd dotfiles && stow *
+cd dotfiles && stow -t ~ */
 ```
