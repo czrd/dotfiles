@@ -7,3 +7,5 @@
 	cm = commit
 	st = status
 	df = diff
+	fpush = push
+	amend = commit
