@@ -7,6 +7,7 @@ end
 telescope.setup {
   defaults = {
     winblend = 20,
+    file_ignore_patterns = { ".git", "node_modules" },
     vimgrep_arguments = {
       "rg",
       "--color=never",
