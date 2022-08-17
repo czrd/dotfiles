@@ -73,6 +73,6 @@ vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 vim.cmd [[
   augroup LspFormatting
     autocmd!
-    autocmd BufWritePre,FileWritePre * lua vim.lsp.buf.formatting_sync()
+    autocmd BufWritePre,FileWritePre * lua vim.lsp.buf.format()
   augroup END
 ]]
