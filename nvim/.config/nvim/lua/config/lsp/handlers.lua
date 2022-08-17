@@ -41,6 +41,11 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.document_range_formatting = false
   end
 
+  if client.name == "clojure_lsp" then
+    client.server_capabilities.document_formatting = false
+    client.server_capabilities.document_range_formatting = false
+  end
+
   if client.server_capabilities.documentHighlightProvider then
     -- document highlight
     vim.api.nvim_create_augroup("lsp_document_highlight", {
