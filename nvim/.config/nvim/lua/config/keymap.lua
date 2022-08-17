@@ -30,8 +30,8 @@ keymap("n", "T", ":SymbolsOutline<CR>", opts)
 
 -- file explorer
 keymap("n", "<C-e>", ":NvimTreeFindFileToggle<CR>", opts)
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-keymap("n", "<C-p>", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<CR>", opts)
+keymap("n", "<C-p>", "<cmd>Telescope find_files hidden=true<CR>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 
 -- navigate buffers
