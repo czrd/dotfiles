@@ -39,6 +39,9 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>x", ":bdelete!<CR>", opts)
 
+-- color scheme
+keymap("n", "<C-c>", "<cmd>Telescope colorscheme enable_preview=true<CR>", opts)
+
 -- indent
 keymap("v", ">", ">gv", opts)
 keymap("v", "<", "<gv", opts)
