@@ -1,3 +1,4 @@
+-- material
 vim.g.material_style = "palenight"
 
 local ok1, material = pcall(require, "material")
@@ -14,9 +15,22 @@ material.setup {
   },
 }
 
-local colorscheme = "material"
-local ok2, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+-- vscode
+local ok2, vscode = pcall(require, "vscode")
 if not ok2 then
+  print "vscode.nvim is not installed"
+  return
+end
+
+vscode.setup {
+  transparent = false,
+  italic_comment = false,
+}
+
+-- colorscheme
+local colorscheme = "vscode"
+local ok3, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not ok3 then
   print("colorscheme not found: " .. colorscheme)
   return
 end

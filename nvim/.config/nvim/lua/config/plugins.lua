@@ -55,6 +55,16 @@ return packer.startup(function(use)
 
   -- colorschemes
   use "marko-cerovac/material.nvim"
+  use "arzg/vim-colors-xcode"
+  use "blueshirts/darcula"
+  use "bignimbus/pop-punk.vim"
+  use "stulzer/heroku-colorscheme"
+  use "yonlu/omni.vim"
+  use "joshwlewis/base16-unikitty"
+  use "changyuheng/color-scheme-holokai.vim"
+  use "google/vim-colorscheme-primary"
+  use "sainnhe/sonokai"
+  use "Mofiqul/vscode.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig"
