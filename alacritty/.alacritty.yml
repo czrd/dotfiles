@@ -96,7 +96,23 @@ schemes:
       - { index: 20, color: "0x8796b0" }
       - { index: 21, color: "0x959dcb" }
 
-colors: *palenight
+  onedark-deep: &onedark-deep
+    primary:
+      background: "0x1a212e"
+      foreground: "0x93a4c3"
+
+    # Normal colors
+    normal:
+      black: "0x0c0e15"
+      red: "0xf65866"
+      green: "0x8bcd5b"
+      yellow: "0xefbd5d"
+      blue: "0x41a7fc"
+      magenta: "0xc75ae8"
+      cyan: "0x34bfd0"
+      white: "0x93a4c3"
+
+colors: *onedark-deep
 font:
   size: 13.0
   normal:
