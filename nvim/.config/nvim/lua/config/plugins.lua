@@ -65,6 +65,8 @@ return packer.startup(function(use)
   use "google/vim-colorscheme-primary"
   use "sainnhe/sonokai"
   use "Mofiqul/vscode.nvim"
+  use "navarasu/onedark.nvim"
+  use "olimorris/onedarkpro.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig"

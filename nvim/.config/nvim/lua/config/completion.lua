@@ -21,6 +21,7 @@ cmp.setup {
   window = {
     documentation = {
       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+      winhighlight = "FloatBorder:FloatBorder",
     },
   },
   snippet = {
