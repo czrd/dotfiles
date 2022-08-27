@@ -20,7 +20,11 @@ end
 cmp.setup {
   window = {
     documentation = {
-      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+      border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+      winhighlight = "FloatBorder:FloatBorder",
+    },
+    completion = {
+      border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
       winhighlight = "FloatBorder:FloatBorder",
     },
   },
