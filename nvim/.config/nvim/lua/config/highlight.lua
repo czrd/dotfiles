@@ -1,24 +1,18 @@
-vim.cmd [[
+vim.api.nvim_command [[
   hi! IndentBlanklineContextChar guifg=#737aa2 gui=nocombine
-
-  " gray
   hi! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
-  " blue
-  hi! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
-  hi! CmpItemAbbrMatchFuzzy guibg=NONE guifg=#569CD6
-  " light blue
-  hi! CmpItemKindVariable guibg=NONE guifg=#9CDCFE
-  hi! CmpItemKindInterface guibg=NONE guifg=#9CDCFE
-  hi! CmpItemKindText guibg=NONE guifg=#9CDCFE
-  " pink
-  hi! CmpItemKindFunction guibg=NONE guifg=#C586C0
-  hi! CmpItemKindMethod guibg=NONE guifg=#C586C0
-  " front
-  hi! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
-  hi! CmpItemKindProperty guibg=NONE guifg=#D4D4D4
-  hi! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
-
-  hi! LspReferenceRead  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
-  hi! LspReferenceText  ctermfg=232 guifg=#ffffff ctermbg=161 guibg=#d7005f
-  hi! LspReferenceWrite ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
 ]]
+
+vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { bg = "NONE", fg = "#569CD6" })
+vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { bg = "NONE", fg = "#569CD6" })
+vim.api.nvim_set_hl(0, "CmpItemKindVariable", { bg = "NONE", fg = "#9CDCFE" })
+vim.api.nvim_set_hl(0, "CmpItemKindInterface", { bg = "NONE", fg = "#9CDCFE" })
+vim.api.nvim_set_hl(0, "CmpItemKindText", { bg = "NONE", fg = "#9CDCFE" })
+vim.api.nvim_set_hl(0, "CmpItemKindFunction", { bg = "NONE", fg = "#C586C0" })
+vim.api.nvim_set_hl(0, "CmpItemKindMethod", { bg = "NONE", fg = "#C586C0" })
+vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { bg = "NONE", fg = "#D4D4D4" })
+vim.api.nvim_set_hl(0, "CmpItemKindProperty", { bg = "NONE", fg = "#D4D4D4" })
+vim.api.nvim_set_hl(0, "CmpItemKindUnit", { bg = "NONE", fg = "#D4D4D4" })
+vim.api.nvim_set_hl(0, "LspReferenceRead", { fg = "#ffffff", bg = "#d7005f" })
+vim.api.nvim_set_hl(0, "LspReferenceText", { fg = "#ffffff", bg = "#d7005f" })
+vim.api.nvim_set_hl(0, "LspReferenceWrite", { fg = "#ffffff", bg = "#d7005f" })
