@@ -67,6 +67,7 @@ return packer.startup(function(use)
   use "Mofiqul/vscode.nvim"
   use "navarasu/onedark.nvim"
   use "olimorris/onedarkpro.nvim"
+  use "martinsione/darkplus.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig"
