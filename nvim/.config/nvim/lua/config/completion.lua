@@ -25,7 +25,7 @@ cmp.setup {
     },
     completion = {
       border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-      winhighlight = "FloatBorder:FloatBorder",
+      winhighlight = "CursorLine:PmenuSel,FloatBorder:FloatBorder",
     },
   },
   snippet = {
