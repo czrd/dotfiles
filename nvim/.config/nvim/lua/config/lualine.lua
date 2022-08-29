@@ -16,6 +16,7 @@ local colors = {
 
 ll.setup {
   options = {
+    globalstatus = true,
     theme = {
       normal = {
         a = { fg = colors.gray, bg = colors.normal },
