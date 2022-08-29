@@ -112,7 +112,23 @@ schemes:
       cyan: "0x34bfd0"
       white: "0x93a4c3"
 
-colors: *onedark-deep
+  darkplus: &darkplus
+    primary:
+      background: "0x1e1e1e"
+      foreground: "0xd4d4d4"
+
+    # Normal colors
+    normal:
+      black: "0x252525"
+      red: "0xf44747"
+      green: "0x6a9955"
+      yellow: "0xdcdcaa"
+      blue: "0x569cd6"
+      magenta: "0xd16d9e"
+      cyan: "0x4ec9b0"
+      white: "0xd4d4d4"
+
+colors: *darkplus
 font:
   size: 13.0
   normal:
