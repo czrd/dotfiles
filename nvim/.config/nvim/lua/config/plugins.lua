@@ -40,6 +40,7 @@ return packer.startup(function(use)
   -- file navigation
   use "kyazdani42/nvim-tree.lua"
   use "nvim-telescope/telescope.nvim"
+  use "fgheng/winbar.nvim"
 
   -- code navigation
   use "yuttie/comfortable-motion.vim"
@@ -111,6 +112,8 @@ return packer.startup(function(use)
   use "terrortylor/nvim-comment"
   use "gelguy/wilder.nvim"
   use "windwp/nvim-ts-autotag"
+  -- use "SmiteshP/nvim-navic"
+  use "SmiteshP/nvim-gps"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
