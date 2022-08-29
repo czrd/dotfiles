@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua"
   use "folke/trouble.nvim"
   use "nvim-lualine/lualine.nvim"
-  use "simrat39/symbols-outline.nvim"
+  use "stevearc/aerial.nvim"
   use "craigemery/vim-autotag"
   use "petertriho/nvim-scrollbar"
 
@@ -112,8 +112,7 @@ return packer.startup(function(use)
   use "terrortylor/nvim-comment"
   use "gelguy/wilder.nvim"
   use "windwp/nvim-ts-autotag"
-  -- use "SmiteshP/nvim-navic"
-  use "SmiteshP/nvim-gps"
+  use "SmiteshP/nvim-navic"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
