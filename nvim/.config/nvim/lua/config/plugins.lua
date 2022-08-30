@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua"
   use "folke/trouble.nvim"
   use "nvim-lualine/lualine.nvim"
-  use "stevearc/aerial.nvim"
+  use "simrat39/symbols-outline.nvim"
   use "craigemery/vim-autotag"
   use "petertriho/nvim-scrollbar"
 
