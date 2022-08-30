@@ -11,7 +11,7 @@ nt.setup {
     exclude = { ".gitignore" },
   },
   view = {
-    width = 40,
+    width = 50,
     mappings = {
       list = {
         { key = "<C-e>", action = "close" },
