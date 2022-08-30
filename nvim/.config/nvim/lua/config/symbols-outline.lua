@@ -6,7 +6,7 @@ end
 
 so.setup {
   width = 40,
-  auto_close = true,
+  highlight_hovered_item = true,
   show_symbol_details = false,
   keymaps = {
     close = { "<Esc>", "q", "T" },
