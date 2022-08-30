@@ -1,5 +1,5 @@
 vim.api.nvim_command [[
-  hi! IndentBlanklineContextChar guifg=#737aa2 gui=nocombine
+  hi! IndentBlanklineContextChar guifg=#D4D4D4 gui=nocombine
   hi! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
 ]]
 
