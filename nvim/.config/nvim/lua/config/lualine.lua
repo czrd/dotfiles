@@ -15,28 +15,36 @@ local colors = {
 }
 
 ll.setup {
+  sections = {
+    lualine_a = { "mode" },
+    lualine_b = { "branch", "diff", "diagnostics", "filename" },
+    lualine_c = {},
+    lualine_x = { "encoding", "fileformat", "filetype", "progress", "location" },
+    lualine_y = {},
+    lualine_z = {},
+  },
   options = {
     globalstatus = true,
     theme = {
       normal = {
-        a = { fg = colors.gray, bg = colors.normal },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
         b = { fg = colors.fg, bg = colors.gray },
         c = { fg = colors.fg, bg = colors.gray },
       },
       insert = {
-        a = { fg = colors.gray, bg = colors.insert },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
       },
       visual = {
-        a = { fg = colors.gray, bg = colors.visual },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
       },
       command = {
-        a = { fg = colors.gray, bg = colors.command },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
       },
       replace = {
-        a = { fg = colors.gray, bg = colors.bg },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
       },
       inactive = {
-        a = { fg = colors.gray, bg = colors.normal },
+        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
       },
     },
   },
