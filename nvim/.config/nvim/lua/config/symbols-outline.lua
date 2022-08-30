@@ -5,7 +5,7 @@ if not ok then
 end
 
 so.setup {
-  width = 40,
+  width = 20,
   highlight_hovered_item = true,
   show_symbol_details = false,
   keymaps = {
