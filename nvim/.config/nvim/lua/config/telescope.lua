@@ -8,7 +8,7 @@ telescope.setup {
   defaults = {
     winblend = 20,
     borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
-    file_ignore_patterns = { ".git", "node_modules" },
+    file_ignore_patterns = { ".git", "node_modules", ".cache" },
     vimgrep_arguments = {
       "rg",
       "--color=never",
@@ -18,7 +18,7 @@ telescope.setup {
       "--line-number",
       "--column",
       "--hidden",
-      "--glob=!.git/",
+      "--glob=!{.git,.cache}/",
     },
   },
 }
