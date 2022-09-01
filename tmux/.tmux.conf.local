@@ -79,7 +79,7 @@ tmux_conf_theme_colour_11="#ffffff"
 tmux_conf_theme_colour_12="#d4d4d4" # foreground(time)
 tmux_conf_theme_colour_13="#ffffff"
 tmux_conf_theme_colour_14="#ffffff"
-tmux_conf_theme_colour_15="#1a212e" # background(time and battery)
+tmux_conf_theme_colour_15="#1E1E1E" # background(time and battery)
 tmux_conf_theme_colour_16="#ffffff"
 tmux_conf_theme_colour_17="#ffffff"
 
