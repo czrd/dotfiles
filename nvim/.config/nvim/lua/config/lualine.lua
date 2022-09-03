@@ -6,7 +6,7 @@ end
 
 local colors = {
   fg = "#d4d4d4",
-  bg = "#007fd4",
+  bg = "#febd69",
   gray = "#2c323d",
   normal = "#007fd4",
   insert = "#E53935",
