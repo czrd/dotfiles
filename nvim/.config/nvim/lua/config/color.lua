@@ -49,8 +49,3 @@ if not ok4 then
   print("colorscheme not found: " .. colorscheme)
   return
 end
-
-if colorscheme == "darkplus" then
-  vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#D4D4D4", bg = "#1E1E1E" })
-  vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#D4D4D4", bg = "#1E1E1E" })
-end
