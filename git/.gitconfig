@@ -9,3 +9,6 @@
 	df = diff
 	fpush = push
 	amend = commit
+	last = log -1 HEAD
+[pager]
+	branch = false
