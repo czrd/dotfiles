@@ -31,21 +31,6 @@ ll.setup {
         b = { fg = colors.fg, bg = colors.gray },
         c = { fg = colors.fg, bg = colors.gray },
       },
-      insert = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-      },
-      visual = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-      },
-      command = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-      },
-      replace = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-      },
-      inactive = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-      },
     },
   },
 }
