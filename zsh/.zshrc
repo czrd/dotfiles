@@ -150,7 +150,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 # prompt
-export PS1='%F{magenta}# %f'
+export PS1='%F{magenta}$ %f'
 
 # pyenv
 # https://github.com/pyenv/pyenv
