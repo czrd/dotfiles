@@ -55,19 +55,6 @@ return packer.startup(function(use)
   use "petertriho/nvim-scrollbar"
 
   -- colorschemes
-  use "marko-cerovac/material.nvim"
-  use "arzg/vim-colors-xcode"
-  use "blueshirts/darcula"
-  use "bignimbus/pop-punk.vim"
-  use "stulzer/heroku-colorscheme"
-  use "yonlu/omni.vim"
-  use "joshwlewis/base16-unikitty"
-  use "changyuheng/color-scheme-holokai.vim"
-  use "google/vim-colorscheme-primary"
-  use "sainnhe/sonokai"
-  use "Mofiqul/vscode.nvim"
-  use "navarasu/onedark.nvim"
-  use "olimorris/onedarkpro.nvim"
   use "martinsione/darkplus.nvim"
 
   -- LSP
