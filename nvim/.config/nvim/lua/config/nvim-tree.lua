@@ -7,7 +7,7 @@ end
 nt.setup {
   auto_reload_on_write = true,
   filters = {
-    custom = { ".git" },
+    custom = { "^\\.git$", ".cache" },
     exclude = { ".gitignore" },
   },
   view = {
