@@ -5,13 +5,9 @@ if not ok then
 end
 
 local colors = {
-  fg = "#d4d4d4",
-  bg = "#febd69",
-  gray = "#2c323d",
-  normal = "#007fd4",
-  insert = "#E53935",
-  visual = "#ffcf1f",
-  command = "#388E3C",
+  white = "#cdcdcd",
+  accent = "#febd69",
+  navy = "#232f3e",
 }
 
 ll.setup {
@@ -27,9 +23,9 @@ ll.setup {
     globalstatus = true,
     theme = {
       normal = {
-        a = { fg = colors.gray, bg = colors.bg, gui = "bold" },
-        b = { fg = colors.fg, bg = colors.gray },
-        c = { fg = colors.fg, bg = colors.gray },
+        a = { fg = colors.navy, bg = colors.accent, gui = "bold" },
+        b = { fg = colors.white, bg = colors.navy },
+        c = { fg = colors.white, bg = colors.navy },
       },
     },
   },
