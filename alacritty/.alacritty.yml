@@ -1,7 +1,7 @@
 schemes:
   darkplus: &darkplus
     primary:
-      background: "0x1e1e1e"
+      background: "0x131921"
       foreground: "0xd4d4d4"
     normal:
       black: "0x252525"
