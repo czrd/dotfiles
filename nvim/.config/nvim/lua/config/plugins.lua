@@ -55,7 +55,7 @@ return packer.startup(function(use)
   use "petertriho/nvim-scrollbar"
 
   -- colorschemes
-  use "martinsione/darkplus.nvim"
+  use "czrd/darkplus.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig"
