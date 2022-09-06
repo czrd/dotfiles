@@ -65,8 +65,8 @@ tmux_conf_24b_colour=true
 # tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 # darkplus
-tmux_conf_theme_colour_1="#1E1E1E" # background
-tmux_conf_theme_colour_2="#1E1E1E" # background(last window)
+tmux_conf_theme_colour_1="#131921" # background
+tmux_conf_theme_colour_2="#131921" # background(last window)
 tmux_conf_theme_colour_3="#d4d4d4" # foreground(inactive window)
 tmux_conf_theme_colour_4="#febd69" # background(active window)
 tmux_conf_theme_colour_5="#F4511E" # background(selection)
@@ -74,12 +74,12 @@ tmux_conf_theme_colour_6="#232f3e" # foreground(session number)
 tmux_conf_theme_colour_7="#d4d4d4" # foreground(uptime)
 tmux_conf_theme_colour_8="#ffffff"
 tmux_conf_theme_colour_9="#d4d4d4" # background(session number)
-tmux_conf_theme_colour_10="#1E1E1E" # background(uptime)
+tmux_conf_theme_colour_10="#131921" # background(uptime)
 tmux_conf_theme_colour_11="#ffffff"
 tmux_conf_theme_colour_12="#d4d4d4" # foreground(time)
 tmux_conf_theme_colour_13="#ffffff"
 tmux_conf_theme_colour_14="#ffffff"
-tmux_conf_theme_colour_15="#1E1E1E" # background(time and battery)
+tmux_conf_theme_colour_15="#131921" # background(time and battery)
 tmux_conf_theme_colour_16="#ffffff"
 tmux_conf_theme_colour_17="#ffffff"
 
