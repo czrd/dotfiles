@@ -7,7 +7,7 @@ end
 local colors = {
   white = "#cdcdcd",
   accent = "#febd69",
-  navy = "#232f3e",
+  navy = "#18202b",
 }
 
 ll.setup {
