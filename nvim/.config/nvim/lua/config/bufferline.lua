@@ -12,7 +12,7 @@ bl.setup {
   },
   highlights = {
     indicator_selected = {
-      fg = "#007fd4",
+      fg = "#CB9754",
     },
   },
 }
