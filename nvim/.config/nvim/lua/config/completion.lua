@@ -1,5 +1,5 @@
 local ok_cmp, cmp = pcall(require, "cmp")
-if not ok_cmp then
+if not ok_cmp or cmp == nil then
   print "nvim-cmp is not installed."
   return
 end
