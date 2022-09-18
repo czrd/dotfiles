@@ -57,6 +57,9 @@ return packer.startup(function(use)
   -- colorschemes
   use "czrd/darkplus.nvim"
 
+  -- formatter
+  use "mhartington/formatter.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"

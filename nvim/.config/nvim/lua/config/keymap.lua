@@ -72,10 +72,9 @@ keymap("n", "gl", "<cmd>lua require('lspsaga.diagnostic').show_line_diagnostics(
 keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 
 -- format
-vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 vim.cmd [[
   augroup LspFormatting
     autocmd!
-    autocmd BufWritePre,FileWritePre * lua vim.lsp.buf.format()
+    autocmd BufWritePost * FormatWriteLock
   augroup END
 ]]
