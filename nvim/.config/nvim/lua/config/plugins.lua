@@ -64,7 +64,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
   use "tami5/lspsaga.nvim"
-  -- use "jose-elias-alvarez/null-ls.nvim"
   use "ionide/Ionide-vim"
   use "scalameta/nvim-metals"
 
@@ -78,6 +77,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/nvim-cmp"
   use "saadparwaiz1/cmp_luasnip"
+  use "ray-x/lsp_signature.nvim"
 
   -- snippets
   use "L3MON4D3/LuaSnip"
