@@ -6,18 +6,30 @@ end
 
 formatter.setup {
   filetype = {
-    lua = {
-      require("formatter.filetypes.lua").stylua,
-    },
     json = {
       exe = "fixjson",
       stdin = true,
     },
+    yaml = {
+      require("formatter.filetypes.yaml").pyaml,
+    },
+    lua = {
+      require("formatter.filetypes.lua").stylua,
+    },
     sh = {
       require("formatter.filetypes.sh").shfmt,
     },
-    js = {
-      require("formatter.filetypes.javascript").prettier,
+    javascript = {
+      require("formatter.filetypes.javascript").prettiereslint,
+    },
+    javascriptreact = {
+      require("formatter.filetypes.javascriptreact").prettiereslint,
+    },
+    typescript = {
+      require("formatter.filetypes.typescriptreact").prettiereslint,
+    },
+    typescriptreact = {
+      require("formatter.filetypes.typescriptreact").prettiereslint,
     },
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
@@ -36,6 +48,15 @@ formatter.setup {
     go = {
       require("formatter.filetypes.go").goimports,
       require("formatter.filetypes.go").gofumpt,
+    },
+    rust = {
+      require("formatter.filetypes.rust").rustfmt,
+    },
+    python = {
+      require("formatter.filetypes.python").isort,
+      require("formatter.filetypes.python").autopep8,
+      require("formatter.filetypes.python").docformatter,
+      require("formatter.filetypes.python").black,
     },
     ["*"] = {
       -- "formatter.filetypes.any" defines default configurations for any
