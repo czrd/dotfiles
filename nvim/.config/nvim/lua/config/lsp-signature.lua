@@ -4,4 +4,10 @@ if not ok then
   return
 end
 
-lsp_signature.setup()
+lsp_signature.setup {
+  hint_enable = false,
+  transparency = 20,
+  handler_opts = {
+    border = "single",
+  },
+}
