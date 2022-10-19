@@ -37,8 +37,7 @@ if not ok2 then
   return
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_nvim.update_capabilities(capabilities)
+local capabilities = cmp_nvim.default_capabilities()
 
 lspconfig.sumneko_lua.setup {
   capabilities = capabilities,
