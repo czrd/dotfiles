@@ -55,7 +55,6 @@ return packer.startup(function(use)
   use "petertriho/nvim-scrollbar"
 
   -- colorschemes
-  use "czrd/darkplus.nvim"
   use "olimorris/onedarkpro.nvim"
 
   -- formatter
