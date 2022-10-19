@@ -7,8 +7,7 @@ end
 formatter.setup {
   filetype = {
     json = {
-      exe = "fixjson",
-      stdin = true,
+      require("formatter.filetypes.json").fixjson,
     },
     yaml = {
       require("formatter.filetypes.yaml").pyaml,
