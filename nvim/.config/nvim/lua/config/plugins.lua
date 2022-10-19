@@ -56,6 +56,7 @@ return packer.startup(function(use)
 
   -- colorschemes
   use "czrd/darkplus.nvim"
+  use "olimorris/onedarkpro.nvim"
 
   -- formatter
   use "mhartington/formatter.nvim"
