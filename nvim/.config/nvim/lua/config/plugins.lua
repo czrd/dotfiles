@@ -37,6 +37,9 @@ return packer.startup(function(use)
   -- icons
   use "kyazdani42/nvim-web-devicons"
 
+  -- start screen
+  use "goolord/alpha-nvim"
+
   -- file navigation
   use "kyazdani42/nvim-tree.lua"
   use "nvim-telescope/telescope.nvim"
