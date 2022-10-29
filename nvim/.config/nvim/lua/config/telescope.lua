@@ -7,6 +7,7 @@ end
 telescope.setup {
   defaults = {
     winblend = 20,
+    prompt_prefix = "",
     borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
     file_ignore_patterns = { ".git", "node_modules", ".cache" },
     vimgrep_arguments = {
