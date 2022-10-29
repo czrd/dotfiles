@@ -1,5 +1,4 @@
 vim.api.nvim_command [[
-  hi! IndentBlanklineContextChar guifg=#CDCDCD gui=nocombine
   hi! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
 ]]
 
@@ -34,3 +33,4 @@ hl("PmenuThumb", { fg = "#CDCDCD", bg = "#CDCDCD" })
 hl("TelescopeBorder", { fg = "#CDCDCD", bg = "#131921" })
 hl("VertSplit", { fg = "#0a0d11", bg = "#131921" })
 hl("WinSeparator", { fg = "#0a0d11", bg = "#131921" })
+hl("IndentBlanklineContextChar", { fg = "#BBBBBB" })
