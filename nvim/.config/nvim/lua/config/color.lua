@@ -11,6 +11,7 @@ onedark.setup {
     EndOfBuffer = { fg = "#131921", bg = "#131921" },
     SignColumn = { bg = "#131921" },
     CursorLine = { bg = "#1a222d" },
+    MatchParen = { fg = "#febd69", bg = "#131921" },
     NvimTreeNormal = {
       fg = "#BBBBBB",
       bg = "#131921",
