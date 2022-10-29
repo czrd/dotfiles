@@ -12,6 +12,7 @@ onedark.setup {
     SignColumn = { bg = "#131921" },
     CursorLine = { bg = "#1a222d" },
     MatchParen = { fg = "#febd69", bg = "#131921" },
+    Search = { fg = "#000000", bg = "#FFFF00" },
     NvimTreeNormal = {
       fg = "#BBBBBB",
       bg = "#131921",
