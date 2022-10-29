@@ -1,35 +1,50 @@
-local ok1, onedarkpro = pcall(require, "onedarkpro")
+local ok1, onedark = pcall(require, "onedark")
 if not ok1 then
   return
 end
 
-onedarkpro.setup {
-  -- dark_theme = "onedark_dark",
-  colors = {
-    onedark = {
-      bg = "#131921",
-    },
-    onedark_vivid = {
-      bg = "#131921",
-    },
-    onedark_dark = {
-      bg = "#131921",
-    },
-  },
+onedark.setup {
+  style = "warmer",
   highlights = {
-    -- plugin
+    Normal = { bg = "#131921" },
+    Terminal = { bg = "#131921" },
+    EndOfBuffer = { fg = "#131921", bg = "#131921" },
+    SignColumn = { bg = "#131921" },
+    CursorLine = { bg = "#1a222d" },
     NvimTreeNormal = {
       fg = "#BBBBBB",
-      bg = "#1c2531",
+      bg = "#131921",
     },
-    TelescopeNormal = {
-      fg = "${fg}",
-      bg = "${bg}",
+    NvimTreeEndOfBuffer = {
+      fg = "#131921",
+      bg = "#131921",
+    },
+    NvimTreeWinSeparator = {
+      fg = "#000000",
+      bg = "#131921",
+    },
+    TelescopeBorder = {
+      fg = "#BBBBBB",
+    },
+    TelescopePromptBorder = {
+      fg = "#BBBBBB",
+    },
+    TelescopeResultsBorder = {
+      fg = "#BBBBBB",
+    },
+    TelescopePreviewBorder = {
+      fg = "#BBBBBB",
+    },
+    TelescopeSelection = {
+      bg = "#1a222d",
+    },
+    TelescopePreviewLine = {
+      bg = "#212c3a",
     },
   },
 }
 
-local colorscheme = "onedarkpro"
+local colorscheme = "onedark"
 local ok2, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok2 then
   return
