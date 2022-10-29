@@ -7,6 +7,7 @@ onedark.setup {
   style = "warmer",
   highlights = {
     Normal = { bg = "#131921" },
+    Visual = { bg = "#293546" },
     Terminal = { bg = "#131921" },
     EndOfBuffer = { fg = "#131921", bg = "#131921" },
     SignColumn = { bg = "#131921" },
