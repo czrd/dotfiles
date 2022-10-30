@@ -10,7 +10,7 @@ formatter.setup {
       require("formatter.filetypes.json").fixjson,
     },
     yaml = {
-      require("formatter.filetypes.yaml").pyaml,
+      require("formatter.filetypes.yaml").yamlfmt,
     },
     lua = {
       require("formatter.filetypes.lua").stylua,
