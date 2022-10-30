@@ -12,14 +12,13 @@ schemes:
       magenta: "0xd16d9e"
       cyan: "0x4ec9b0"
       white: "0xd4d4d4"
-
 colors: *darkplus
 font:
-  size: 13.0
+  size: 11.0
   normal:
-    family: UbuntuMono Nerd Font
+    family: JetBrains Mono Nerd Font
   bold:
-    family: UbuntuMono Nerd Font
+    family: JetBrains Mono Nerd Font
 window:
   decorations: none
   padding:
