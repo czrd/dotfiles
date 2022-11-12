@@ -12,8 +12,8 @@ neoscroll.setup {
 }
 
 require("neoscroll.config").set_mappings {
-  ["<C-b>"] = { "scroll", { "-vim.wo.scroll", "true", "100" } },
-  ["<C-f>"] = { "scroll", { "vim.wo.scroll", "true", "100" } },
+  ["<C-b>"] = { "scroll", { "-vim.wo.scroll", "true", "200" } },
+  ["<C-f>"] = { "scroll", { "vim.wo.scroll", "true", "200" } },
   ["zt"] = { "zt", { "100" } },
   ["zz"] = { "zz", { "100" } },
   ["zb"] = { "zb", { "100" } },
