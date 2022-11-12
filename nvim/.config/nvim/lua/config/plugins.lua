@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "simrat39/symbols-outline.nvim"
   use "craigemery/vim-autotag"
   use "petertriho/nvim-scrollbar"
+  use "karb94/neoscroll.nvim"
 
   -- colorschemes
   use "navarasu/onedark.nvim"
