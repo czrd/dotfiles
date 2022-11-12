@@ -46,7 +46,6 @@ return packer.startup(function(use)
   use "fgheng/winbar.nvim"
 
   -- code navigation
-  use "yuttie/comfortable-motion.vim"
   use "lukas-reineke/indent-blankline.nvim"
   use "akinsho/bufferline.nvim"
   use "folke/todo-comments.nvim"
