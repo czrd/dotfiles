@@ -94,3 +94,8 @@ lspconfig.vuels.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
+
+lspconfig.jedi_language_server.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
