@@ -95,7 +95,17 @@ lspconfig.vuels.setup {
   on_attach = on_attach,
 }
 
-lspconfig.jedi_language_server.setup {
+lspconfig.pylsp.setup {
   capabilities = capabilities,
   on_attach = on_attach,
+  settings = {
+    pylsp = {
+      plugins = {
+        rope_autoimport = {
+          enabled = true,
+          eager = true,
+        },
+      },
+    },
+  },
 }
