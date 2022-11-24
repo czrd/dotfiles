@@ -33,24 +33,25 @@ formatter.setup {
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
     },
-    clojure = {
-      function()
-        return {
-          exe = "cljstyle",
-          args = {
-            "pipe",
-          },
-          stdin = true,
-        }
-      end,
-    },
+    clojure = function()
+      return {
+        exe = "cljstyle",
+        args = {
+          "pipe",
+        },
+        stdin = true,
+      }
+    end,
     go = {
       require("formatter.filetypes.go").goimports,
       require("formatter.filetypes.go").gofumpt,
     },
-    rust = {
-      require("formatter.filetypes.rust").rustfmt,
-    },
+    rust = function()
+      return {
+        exe = "rustfmt --edition 2021",
+        stdin = true,
+      }
+    end,
     python = {
       require("formatter.filetypes.python").isort,
       require("formatter.filetypes.python").autopep8,
