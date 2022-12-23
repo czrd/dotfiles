@@ -168,7 +168,7 @@ export PATH="$PATH:$GOPATH/bin"
 
 # rbenv
 # https://github.com/rbenv/rbenv
-eval "$(rbenv init -)"
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
 # jenv
 # https://github.com/jenv/jenv
