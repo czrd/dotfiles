@@ -8,7 +8,7 @@
 
 ```
 git clone git@github.com:czrd/dotfiles.git
-cd dotfiles && stow -t ~ */
+cd dotfiles && ./install.sh
 ```
 
 # nvim
@@ -16,13 +16,6 @@ cd dotfiles && stow -t ~ */
 - [NeoVim](https://neovim.io/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Nerd Fonts](https://www.nerdfonts.com/)
-
-## Setup
-```
-git clone https://github.com/czrd/dotfiles.git
-cd dotfiles
-stow -t ~ nvim
-```
 
 ## Screenshots
 ### Startup menu
@@ -55,14 +48,6 @@ Grep files | Space fg
 ## Requirements
 - [tmux](https://github.com/tmux/tmux)
 
-## Setup
-```
-git clone https://github.com/czrd/dotfiles.git
-cd dotfiles
-stow -t ~ tmux
-```
-
 ## Screenshots
 ![Screenshot from 2022-11-03 17-05-10](https://user-images.githubusercontent.com/49582751/199672248-c3bf7fa7-c100-4617-b5d8-2c5b8ad8a05b.png)
 ![Screenshot from 2022-11-03 17-06-31](https://user-images.githubusercontent.com/49582751/199672392-aa9adb36-4deb-4f0b-893b-ecf6fea1d82b.png)
-
