@@ -3,7 +3,7 @@ alias g=git
 alias t=tmux
 alias docker=podman
 alias lg=lazygit
-if command -v batcat &> /dev/null; then
-  alias cat="batcat -pp --theme \"OneHalfDark\""
-  alias catt="batcat --theme \"OneHalfDark\""
+if command -v bat &> /dev/null; then
+  alias cat="bat -pp --theme \"OneHalfDark\""
+  alias catt="bat --theme \"OneHalfDark\""
 fi
