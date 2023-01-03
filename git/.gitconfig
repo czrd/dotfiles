@@ -2,14 +2,15 @@
 	name = Takeshi Itami
 	email = tksh.itm@gmail.com
 [alias]
-	co = checkout
+	amend = commit --amend --no-edit
 	br = branch
 	cm = commit
-	st = status
+	co = checkout
 	df = diff
 	fpush = push
-	amend = commit --amend --no-edit
 	last = log -1 HEAD
+	st = status
+  ps = push
 [pager]
 	branch = false
 [core]
