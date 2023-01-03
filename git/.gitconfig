@@ -8,7 +8,7 @@
 	st = status
 	df = diff
 	fpush = push
-	amend = commit
+	amend = commit --amend --no-edit
 	last = log -1 HEAD
 [pager]
 	branch = false
