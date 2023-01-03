@@ -47,27 +47,27 @@ tmux_conf_24b_colour=true
 
 # darkplus
 accent_color="#febd69"
-selection_color="#CB9754"
+selection_color="#cb9754"
 background_color="#131921"
-foreground_color="#CDCDCD"
+foreground_color="#cdcdcd"
 
-tmux_conf_theme_colour_1=background_color  # background
-tmux_conf_theme_colour_2=background_color  # background(last window)
-tmux_conf_theme_colour_3=foreground_color  # foreground(inactive window)
-tmux_conf_theme_colour_4=accent_color      # background(active window)
-tmux_conf_theme_colour_5=selection_color   # background(selection)
-tmux_conf_theme_colour_6=background_color  # foreground(session number)
-tmux_conf_theme_colour_7=foreground_color  # foreground(uptime)
-tmux_conf_theme_colour_8=foreground_color
-tmux_conf_theme_colour_9=foreground_color  # background(session number)
-tmux_conf_theme_colour_10=background_color # background(uptime)
-tmux_conf_theme_colour_11=foreground_color
-tmux_conf_theme_colour_12=foreground_color # foreground(time)
-tmux_conf_theme_colour_13=foreground_color
-tmux_conf_theme_colour_14=foreground_color
-tmux_conf_theme_colour_15=background_color # background(time and battery)
-tmux_conf_theme_colour_16=foreground_color
-tmux_conf_theme_colour_17=foreground_color
+tmux_conf_theme_colour_1=$background_color  # background
+tmux_conf_theme_colour_2=$background_color  # background(last window)
+tmux_conf_theme_colour_3=$foreground_color  # foreground(inactive window)
+tmux_conf_theme_colour_4=$accent_color      # background(active window)
+tmux_conf_theme_colour_5=$selection_color   # background(selection)
+tmux_conf_theme_colour_6=$background_color  # foreground(session number)
+tmux_conf_theme_colour_7=$foreground_color  # foreground(uptime)
+tmux_conf_theme_colour_8=$foreground_color
+tmux_conf_theme_colour_9=$foreground_color  # background(session number)
+tmux_conf_theme_colour_10=$background_color # background(uptime)
+tmux_conf_theme_colour_11=$foreground_color
+tmux_conf_theme_colour_12=$foreground_color # foreground(time)
+tmux_conf_theme_colour_13=$foreground_color
+tmux_conf_theme_colour_14=$foreground_color
+tmux_conf_theme_colour_15=$background_color # background(time and battery)
+tmux_conf_theme_colour_16=$foreground_color
+tmux_conf_theme_colour_17=$foreground_color
 
 # window style
 tmux_conf_theme_window_fg="default"
