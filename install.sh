@@ -9,4 +9,5 @@ stow -t ~ \
   zsh \
   hypr \
   waybar \
-  wallpapers
+  wallpapers \
+  neofetch
