@@ -74,6 +74,16 @@ return packer.startup(function(use)
   -- clojure
   use "Olical/conjure"
 
+  -- yuck
+  use {
+    "elkowar/yuck.vim",
+    config = function()
+      vim.g.yuck_align_multiline_strings = 1
+      vim.g.yuck_align_subforms = 1
+      vim.g.yuck_lisp_indentation = 1
+    end,
+  }
+
   -- completion
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-buffer"
