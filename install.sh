@@ -6,4 +6,7 @@ stow -t ~ \
   git \
   nvim \
   tmux \
-  zsh
+  zsh \
+  hypr \
+  waybar \
+  wallpapers
