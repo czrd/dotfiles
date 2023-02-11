@@ -111,8 +111,8 @@
     "wlr/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "",
-            "default": ""
+            "active": "\uebb4",
+            "default": "\uebb5"
         },
         "on-click": "activate",
         "sort-by-number": true,
