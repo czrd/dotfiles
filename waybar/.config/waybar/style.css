@@ -1,0 +1,85 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: JetBrains Mono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14.5px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+tooltip {
+  background-color: rgba(19, 25, 33, 0.9);
+}
+
+tooltip label {
+  font-size: 15px;
+}
+
+window#waybar {
+  color: #cdcdcd;
+  background-color: rgba(19, 25, 33, 0.6);
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+button {
+  color: #cdcdcd;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  background: inherit;
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+}
+
+#workspaces button.active {
+  color: #febd69;
+}
+
+#workspaces button.urgent {
+  color: #f53c3c;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#custom-powermenu {
+  padding: 0 10px;
+}
+
+#custom-powermenu {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+}
+
+#temperature.critical {
+  color: #f53c3c;
+}

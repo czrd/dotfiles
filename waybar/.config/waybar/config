@@ -1,0 +1,126 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "width": 1920,
+    "spacing": 2,
+    "modules-left": [
+        "custom/powermenu",
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "temperature",
+        "cpu",
+        "memory",
+        "clock"
+    ],
+    "clock": {
+        "interval": 1,
+        "timezone": "Asia/Tokyo",
+        "locale": "en_US.UTF-8",
+        "format": "{:%Y-%m-%d %a %H:%M:%S}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffcc66'><b>{}</b></span>",
+                "days": "<span color='#cdcdcd'><b>{}</b></span>",
+                "weekdays": "<span color='#ffead3'><b>{}</b></span>",
+                "today": "<span color='#d7005f'><b>{}</b></span>"
+            }
+        }
+    },
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "MEM {}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "tooltip-format": "{timeTo}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{essid}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{icon}  {volume}% {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
+        "format-muted": "  {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "{used}/{total} ({percentage_used}% used)",
+        "path": "/",
+        "tooltip": false
+    },
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "on-click": "activate",
+        "sort-by-number": true,
+        "all-outputs": true
+    },
+    "custom/powermenu": {
+        "format": "",
+        "on-click": "~/.config/rofi/scripts/powermenu",
+        "tooltip": false
+    }
+}
