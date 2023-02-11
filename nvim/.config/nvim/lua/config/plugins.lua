@@ -59,6 +59,7 @@ return packer.startup(function(use)
 
   -- colorschemes
   use "navarasu/onedark.nvim"
+  use "folke/tokyonight.nvim"
 
   -- formatter
   use "mhartington/formatter.nvim"
