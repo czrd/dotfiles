@@ -4,12 +4,6 @@ if not ok then
   return
 end
 
-local colors = {
-  white = "#cdcdcd",
-  accent = "#febd69",
-  navy = "#1f2938",
-}
-
 ll.setup {
   sections = {
     lualine_a = { "mode" },
@@ -23,9 +17,9 @@ ll.setup {
     globalstatus = true,
     theme = {
       normal = {
-        a = { fg = colors.navy, bg = colors.accent, gui = "bold" },
-        b = { fg = colors.white, bg = colors.navy },
-        c = { fg = colors.white, bg = colors.navy },
+        a = { fg = "#ffffff", bg = "#3760bf", gui = "bold" },
+        b = { bg = "#c4c8da" },
+        c = { bg = "#c4c8da" },
       },
     },
   },

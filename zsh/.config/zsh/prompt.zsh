@@ -1,4 +1,4 @@
 NEWLINE=$'\n'
-DIR='%B%K{#1f2938}%F{#cdcdcd}  %~  %f%k%b'
-PROMPT='%F{#1f2938}%K{yellow} $ %k%f'
+DIR='%B%K{#c4c8da}%F{#8990b3}  %~  %f%k%b'
+PROMPT='%F{#c4c8da}%K{blue} $ %k%f'
 export PS1="${NEWLINE}${DIR}${PROMPT} "
