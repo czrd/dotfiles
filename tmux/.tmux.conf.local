@@ -46,7 +46,7 @@ tmux_conf_new_session_prompt=false
 tmux_conf_24b_colour=true
 
 # darkplus
-accent_color="#3760bf"
+accent_color="#2e7de9"
 selection_color="#99a7df"
 background_color="#e1e2e7"
 foreground_color="#8990b3"
