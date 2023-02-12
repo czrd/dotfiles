@@ -2,7 +2,7 @@ schemes:
   light: &light
     primary:
       background: "0xe1e2e7"
-      foreground: "0x3760bf"
+      foreground: "0x414868"
     normal:
       black: "0x252525"
       red: "0xf44747"
