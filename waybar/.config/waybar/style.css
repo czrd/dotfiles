@@ -24,7 +24,7 @@ tooltip label {
 
 window#waybar {
   color: rgba(0, 0, 0, 0.9);
-  background-color: rgba(225, 226, 231, 0.8);
+  background-color: rgba(225, 226, 231, 0.7);
 }
 
 window#waybar.hidden {
