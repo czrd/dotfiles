@@ -6,8 +6,8 @@ end
 
 ll.setup {
   sections = {
-    lualine_a = { "mode" },
-    lualine_b = { "branch", "diff", "diagnostics", "filename" },
+    lualine_a = {},
+    lualine_b = { "mode", "branch", "diff", "diagnostics", "filename" },
     lualine_c = {},
     lualine_x = { "encoding", "fileformat", "filetype", "progress", "location" },
     lualine_y = {},
