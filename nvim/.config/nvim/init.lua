@@ -1,7 +1,6 @@
 require "config/plugins"
 require "config/general"
 require "config/color"
-require "config/highlight"
 require "config/keymap"
 require "config/completion"
 require "config/terminal"
