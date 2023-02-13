@@ -1,5 +1,4 @@
-local colorscheme = "tokyonight-day"
-local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+local ok, _ = pcall(vim.cmd, "colorscheme tokyonight-day")
 if not ok then
   return
 end

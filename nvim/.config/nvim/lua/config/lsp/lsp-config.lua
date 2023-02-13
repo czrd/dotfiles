@@ -1,3 +1,4 @@
+local hl = require "config/highlight"
 local ok, lspconfig = pcall(require, "lspconfig")
 if not ok then
   print "lspconfig is not installed"
@@ -5,6 +6,7 @@ if not ok then
 end
 
 local on_attach = function(client, bufnr)
+  hl.set_highlights()
   if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_create_augroup("lsp_document_highlight", {
       clear = false,
