@@ -1,24 +1,17 @@
-require("tokyonight").setup {
-  on_highlights = function(hl, c)
-    hl.FloatBorder = { fg = c.fg, bg = c.bg }
-    hl.NormalFloat = { fg = c.fg, bg = c.bg }
-    hl.CursorLineNr = { fg = c.fg, bg = c.bg }
-    hl.WinSeparator = { fg = c.fg, bg = c.bg }
-    hl.TelescopeBorder = { fg = c.fg, bg = c.bg }
-    hl.TelescopePromptBorder = { fg = c.fg, bg = c.bg }
-    hl.TelescopeResultsBorder = { fg = c.fg, bg = c.bg }
-    hl.TelescopePreviewLine = { fg = c.fg, bg = c.bg }
-    hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
-    hl.LspReferenceRead = { fg = "#ffffff", bg = "#d7005f" }
-    hl.LspReferenceText = { fg = "#ffffff", bg = "#d7005f" }
-    hl.LspReferenceWrite = { fg = "#ffffff", bg = "#d7005f" }
-    hl.FocusedSymbol = { fg = "#ffffff", bg = "#d7005f" }
-    hl.Search = { fg = "#000000", bg = "#febd69" }
-    hl.MatchParen = { fg = "#000000", bg = "#febd69" }
-  end,
+require("catppuccin").setup {
+  flavour = "latte",
+  term_colors = true,
+  custom_highlights = {
+    FocusedSymbol = { fg = "#ffffff", bg = "#d7005f" },
+    LspReferenceRead = { link = "FocusedSymbol" },
+    LspReferenceWrite = { link = "FocusedSymbol" },
+    LspReferenceText = { link = "FocusedSymbol" },
+    NormalFloat = { link = "Normal" },
+    PmenuSel = { fg = "#ffffff", bg = "#3760bf" },
+  },
 }
 
-local ok, _ = pcall(vim.cmd, "colorscheme tokyonight-day")
+local ok, _ = pcall(vim.cmd, "colorscheme catppuccin")
 if not ok then
   return
 end

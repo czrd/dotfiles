@@ -58,8 +58,7 @@ return packer.startup(function(use)
   use "karb94/neoscroll.nvim"
 
   -- colorschemes
-  use "navarasu/onedark.nvim"
-  use "folke/tokyonight.nvim"
+  use "catppuccin/nvim"
 
   -- formatter
   use "mhartington/formatter.nvim"
