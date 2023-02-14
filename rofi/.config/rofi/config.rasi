@@ -1,6 +1,16 @@
+@theme "myTheme"
 configuration {
   font: "JetBrains Mono Nerd Font 11";
 	display-drun: "";
+  timeout {
+    action: "kb-cancel";
+    delay:  0;
+  }
+  filebrowser {
+    directories-first: true;
+    sorting-method:    "name";
+  }
+
 /*	modes: "window,drun,run,ssh";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
@@ -140,13 +150,4 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
 }
-@theme "myTheme"
