@@ -7,10 +7,10 @@
     blue:                        rgba (  38, 139, 210, 100 % );
     yellow:                      rgba ( 254, 189, 105, 100 % );
     black:                       rgba (   0,   0,   0, 100 % );
-    lightbg:                     rgba (   0,   0,   0,  80 % );
+    lightbg:                     rgba ( 200, 200, 200,  80 % );
     lightfg:                     rgba (  88, 104, 117, 100 % );
-    background:                  rgba (   0,   0,   0,  80 % );
-    foreground:                  rgba ( 255, 255, 255, 100 % );
+    background:                  rgba(  225, 226, 231,  80 % );
+    foreground:                  rgba (   0,   0,   0, 100 % );
 
     border-color:                transparent;
     separatorcolor:              var(foreground);
@@ -26,7 +26,7 @@
     urgent-background:           var(background);
 
     selected-normal-foreground:  var(black);
-    selected-normal-background:  var(yellow);
+    selected-normal-background:  var(lightbg);
 
     selected-active-foreground:  var(background);
     selected-active-background:  var(blue);
