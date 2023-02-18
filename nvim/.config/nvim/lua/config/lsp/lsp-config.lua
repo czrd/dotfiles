@@ -4,6 +4,10 @@ if not ok then
   return
 end
 
+require("lspconfig.ui.windows").default_options = {
+  border = "single",
+}
+
 local on_attach = function(client, bufnr)
   if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_create_augroup("lsp_document_highlight", {
