@@ -17,6 +17,7 @@
         "temperature",
         "cpu",
         "memory",
+        "tray",
         "clock"
     ],
     "clock": {
@@ -122,5 +123,9 @@
         "format": "",
         "on-click": "~/.config/rofi/scripts/powermenu",
         "tooltip": false
+    },
+    "tray": {
+      "icon-size": 18,
+      "spacing": 10
     }
 }
