@@ -4,6 +4,6 @@ alias t=tmux
 alias docker=podman
 alias lg=lazygit
 if command -v bat &> /dev/null; then
-  alias cat="bat -pp --theme \"OneHalfDark\""
-  alias catt="bat --theme \"OneHalfDark\""
+  alias cat="bat --theme \"GitHub\""
+  alias catt="bat --theme \"GitHub\""
 fi
