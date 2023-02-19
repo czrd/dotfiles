@@ -9,6 +9,7 @@ require("catppuccin").setup {
     PmenuSel = { fg = "#ffffff", bg = "#3760bf" },
     Search = { fg = "#ffffff", bg = "#febd69" },
     MatchParen = { link = "Search" },
+    LspInfoBorder = { link = "FloatBorder" },
   },
 }
 
