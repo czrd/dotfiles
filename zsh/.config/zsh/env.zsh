@@ -16,12 +16,6 @@ export PATH="$PATH:$GOPATH/bin"
 # https://github.com/rbenv/rbenv
 eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
-# jenv
-# https://github.com/jenv/jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-. "$HOME/.cargo/env"
-
 # rust
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ]; then
