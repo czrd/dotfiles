@@ -58,6 +58,9 @@ formatter.setup {
       require("formatter.filetypes.python").docformatter,
       require("formatter.filetypes.python").black,
     },
+    cpp = {
+      require("formatter.filetypes.cpp").clangformat,
+    },
     ["*"] = {
       -- "formatter.filetypes.any" defines default configurations for any
       -- filetype
