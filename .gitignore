@@ -44,3 +44,6 @@ luac.out
 
 # packer
 nvim/.config/nvim/plugin/packer_compiled.lua
+
+# lua
+.luarc.json
