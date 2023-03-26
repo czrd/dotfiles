@@ -7,6 +7,8 @@ require("catppuccin").setup {
     Search = { fg = "#ffffff", bg = "#febd69" },
     MatchParen = { link = "Search" },
     LspInfoBorder = { link = "FloatBorder" },
+    TelescopeBorder = { link = "Normal" },
+    FloatBorder = { link = "Normal" },
   },
 }
 
