@@ -21,16 +21,20 @@ formatter.setup {
       require("formatter.filetypes.sh").shfmt,
     },
     javascript = {
-      require("formatter.filetypes.javascript").prettiereslint,
+      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint_d,
     },
     javascriptreact = {
-      require("formatter.filetypes.javascriptreact").prettiereslint,
+      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint_d,
     },
     typescript = {
-      require("formatter.filetypes.typescriptreact").prettiereslint,
+      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint_d,
     },
     typescriptreact = {
-      require("formatter.filetypes.typescriptreact").prettiereslint,
+      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint_d,
     },
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
