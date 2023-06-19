@@ -11,12 +11,12 @@
     "modules-center": [
     ],
     "modules-right": [
-        "pulseaudio",
         "network",
         "battery",
         "temperature",
         "cpu",
         "memory",
+        "pulseaudio",
         "tray",
         "clock"
     ],
@@ -24,19 +24,7 @@
         "interval": 1,
         "timezone": "Asia/Tokyo",
         "locale": "en_US.UTF-8",
-        "format": "{:%Y-%m-%d %a %H:%M:%S}",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "calendar": {
-            "mode": "year",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "format": {
-                "months": "<span color='#ffcc66'><b>{}</b></span>",
-                "days": "<span color='#cdcdcd'><b>{}</b></span>",
-                "weekdays": "<span color='#ffead3'><b>{}</b></span>",
-                "today": "<span color='#d7005f'><b>{}</b></span>"
-            }
-        }
+        "format": "{:%Y-%m-%d %a %H:%M:%S}"
     },
     "cpu": {
         "format": "CPU {usage}%",
@@ -65,21 +53,21 @@
         "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "tooltip-format": "{timeTo}",
         "format-icons": [
             "",
             "",
             "",
             "",
             ""
-        ]
+        ],
+        "tooltip": false
     },
     "network": {
         "format-wifi": "  {signalStrength}%",
         "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{essid}",
         "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected"
+        "format-disconnected": "Disconnected",
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",

@@ -15,16 +15,19 @@
 }
 
 tooltip {
-  background-color: rgba(19, 25, 33, 0.9);
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 tooltip label {
+  color: #fff;
+  font-family: "Roboto","Arial",sans-serif;
   font-size: 15px;
 }
 
 window#waybar {
-  color: rgba(0, 0, 0, 0.9);
-  background-color: rgba(225, 226, 231, 0.7);
+  color: #6C6F85;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 window#waybar.hidden {
@@ -32,7 +35,7 @@ window#waybar.hidden {
 }
 
 button {
-  color: rgba(0, 0, 0, 0.9);
+  color: #6C6F85;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
