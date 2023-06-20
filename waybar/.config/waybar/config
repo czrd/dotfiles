@@ -109,8 +109,23 @@
     },
     "custom/powermenu": {
         "format": "",
-        "on-click": "~/.config/rofi/scripts/powermenu",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "~/.config/rofi/scripts/powermenu"
+    },
+    "custom/poweroff": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+    "custom/reboot": {
+        "format": "󰑓",
+        "tooltip": false,
+        "on-click": "systemctl reboot"
+    },
+    "custom/sleep": {
+        "format": "󰒲",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
     },
     "tray": {
       "icon-size": 18,
