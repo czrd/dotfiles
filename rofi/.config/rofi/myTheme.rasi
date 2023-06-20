@@ -7,10 +7,10 @@
     blue:                        rgba (  38, 139, 210, 100 % );
     yellow:                      rgba ( 254, 189, 105, 100 % );
     black:                       rgba (   0,   0,   0, 100 % );
-    lightbg:                     rgba ( 200, 200, 200,  80 % );
+    lightbg:                     rgba ( 199, 217, 243,  80 % );
     lightfg:                     rgba (  88, 104, 117, 100 % );
-    background:                  rgba(  225, 226, 231,  80 % );
-    foreground:                  rgba (   0,   0,   0, 100 % );
+    background:                  rgba(  215, 228, 247, 100 % );
+    foreground:                  rgba ( 108, 111, 133, 100 % );
 
     border-color:                transparent;
     separatorcolor:              var(foreground);
@@ -25,7 +25,7 @@
     urgent-foreground:           var(red);
     urgent-background:           var(background);
 
-    selected-normal-foreground:  var(black);
+    selected-normal-foreground:  var(foreground);
     selected-normal-background:  var(lightbg);
 
     selected-active-foreground:  var(background);
@@ -101,6 +101,8 @@ element-icon {
 window {
     padding:          3;
     background-color: var(background);
+    border-color: var(separatorcolor);
+    border:       2px solid;
 }
 mainbox {
     padding: 0;
