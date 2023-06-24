@@ -1,0 +1,6 @@
+#!/bin/bash
+
+picture_folder=$HOME/Pictures
+filename=screenshot_$(date +%Y-%m-%d.%H-%M-%S).png
+grim $picture_folder/$filename
+dunstify -t 2000 -i "$picture_folder/$filename" -a "Screenshot" "image saved"
