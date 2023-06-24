@@ -9,4 +9,5 @@ stow -t ~ \
   zsh \
   hypr \
   waybar \
-  neofetch
+  neofetch \
+  dunst
