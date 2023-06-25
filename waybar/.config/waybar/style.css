@@ -69,8 +69,14 @@ button:hover {
 #custom-powermenu,
 #custom-poweroff,
 #custom-sleep,
-#custom-reboot {
+#custom-reboot,
+#custom-recording {
   padding: 0 10px;
+}
+
+#custom-recording {
+  font-size: 20px;
+  color: #f53c3c;
 }
 
 #custom-powermenu {

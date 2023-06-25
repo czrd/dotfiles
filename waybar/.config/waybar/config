@@ -11,6 +11,7 @@
     "modules-center": [
     ],
     "modules-right": [
+        "custom/recording",
         "network",
         "battery",
         "temperature",
@@ -126,6 +127,12 @@
         "format": "󰒲",
         "tooltip": false,
         "on-click": "systemctl suspend"
+    },
+    "custom/recording": {
+      "exec": "~/.config/waybar/scripts/recording.sh status",
+      "format": "{}",
+      "on-click": "~/.config/waybar/scripts/recording.sh toggle",
+      "restart-interval": 1
     },
     "tray": {
       "icon-size": 18,
