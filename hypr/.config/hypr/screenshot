@@ -2,5 +2,11 @@
 
 picture_folder=$HOME/Pictures
 filename=screenshot_$(date +%Y-%m-%d.%H-%M-%S).png
-grim -g "$(slurp)" $picture_folder/$filename
+
+if [ "$1" == "slurp" ]; then
+  grim -g "$(slurp)" $picture_folder/$filename
+else
+  grim $picture_folder/$filename
+fi
+
 dunstify -t 2000 -i "$picture_folder/$filename" -a "Screenshot" "Screenshot saved"
