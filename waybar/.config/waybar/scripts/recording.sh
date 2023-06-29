@@ -10,8 +10,8 @@ fi
 
 if [ "$1" == "toggle" ]; then
   if [ -n "$(pgrep wf-recorder)" ]; then
-    killall wf-recorder
     dunstify -t 2000 -a "Screen recording" "Screenrecord saved"
+    killall -s SIGINT wf-recorder
   else
     wf-recorder -f "$HOME/Videos/$(date +'%Y%m%dT%H%M%S').mkv"
   fi
