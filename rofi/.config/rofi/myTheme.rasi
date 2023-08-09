@@ -9,8 +9,9 @@
     black:                       rgba (   0,   0,   0, 100 % );
     lightbg:                     rgba ( 199, 217, 243,  80 % );
     lightfg:                     rgba (  88, 104, 117, 100 % );
-    background:                  rgba(  215, 228, 247, 100 % );
-    foreground:                  rgba ( 108, 111, 133, 100 % );
+    background:                  rgba (  69,  99, 100, 100 % );
+    foreground:                  rgba ( 207, 216, 220, 100 % );
+    selected:                    rgba (  55,  71,  79, 100 % );
 
     border-color:                transparent;
     separatorcolor:              var(foreground);
@@ -26,7 +27,7 @@
     urgent-background:           var(background);
 
     selected-normal-foreground:  var(foreground);
-    selected-normal-background:  var(lightbg);
+    selected-normal-background:  var(selected);
 
     selected-active-foreground:  var(background);
     selected-active-background:  var(blue);
