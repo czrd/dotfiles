@@ -1,6 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: JetBrains Mono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Fira Code", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
   font-size: 14.5px;
 }
 
@@ -26,7 +26,7 @@ tooltip label {
 }
 
 window#waybar {
-  color: #6C6F85;
+  color: #D7DCDD;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -35,7 +35,7 @@ window#waybar.hidden {
 }
 
 button {
-  color: #6C6F85;
+  color: #D7DCDD;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
