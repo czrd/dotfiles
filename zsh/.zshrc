@@ -1,9 +1,6 @@
-#!/bin/sh
-
 export TERM=xterm-256color
 
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 plug "esc/conda-zsh-completion"
 plug "zsh-users/zsh-autosuggestions"
