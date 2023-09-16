@@ -6,7 +6,7 @@
     "spacing": 2,
     "modules-left": [
         "custom/powermenu",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": [
     ],
@@ -98,7 +98,7 @@
         "path": "/",
         "tooltip": false
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "active": "\uebb4",
