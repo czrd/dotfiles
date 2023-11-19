@@ -1,2 +1,0 @@
-{:lint-as {mount.core/defstate clj-kondo.lint-as/def-catch-all}
- :linters {:clojure-lsp/unused-public-var {:exclude-when-defined-by #{clj-kondo.lint-as/def-catch-all}}}}
