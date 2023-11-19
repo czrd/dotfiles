@@ -12,6 +12,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- colorschemes
+  {
+    "catppuccin/nvim",
+    config = function()
+      require "config/catppuccin"
+    end,
+  },
+
   -- icons
   "kyazdani42/nvim-web-devicons",
 
@@ -47,6 +55,15 @@ require("lazy").setup({
   "folke/trouble.nvim",
   "folke/todo-comments.nvim",
   {
+    "akinsho/bufferline.nvim",
+    config = function()
+      require "config/bufferline"
+    end,
+    dependencies = {
+      "catppuccin/nvim",
+    },
+  },
+  {
     "lukas-reineke/indent-blankline.nvim",
     init = function()
       require("ibl").setup {
@@ -55,12 +72,6 @@ require("lazy").setup({
           show_end = false,
         },
       }
-    end,
-  },
-  {
-    "akinsho/bufferline.nvim",
-    config = function()
-      require "config/bufferline"
     end,
   },
   {
@@ -91,14 +102,6 @@ require("lazy").setup({
     "karb94/neoscroll.nvim",
     config = function()
       require "config/neoscroll"
-    end,
-  },
-
-  -- colorschemes
-  {
-    "catppuccin/nvim",
-    config = function()
-      require "config/catppuccin"
     end,
   },
 
