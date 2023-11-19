@@ -1,125 +1,193 @@
-local fn = vim.fn
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
-
--- install packer if needed
-if fn.empty(fn.glob(install_path)) > 0 then
-  PACKER_BOOTSTRAP = fn.system {
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system {
     "git",
     "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
   }
 end
+vim.opt.rtp:prepend(lazypath)
 
-vim.cmd [[packadd packer.nvim]]
-
--- reload neovim when plugins.lua is saved
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
-
--- if failed to require packer, do nothing
-local ok, packer = pcall(require, "packer")
-if not ok then
-  print "packer is not installed"
-  return
-end
-
-return packer.startup(function(use)
-  -- packer it self
-  use "wbthomason/packer.nvim"
-
+require("lazy").setup({
   -- icons
-  use "kyazdani42/nvim-web-devicons"
+  "kyazdani42/nvim-web-devicons",
 
   -- start screen
-  use "goolord/alpha-nvim"
+  {
+    "goolord/alpha-nvim",
+    config = function()
+      require "config/alpha"
+    end,
+  },
 
   -- file navigation
-  use "kyazdani42/nvim-tree.lua"
-  use "nvim-telescope/telescope.nvim"
-  use "fgheng/winbar.nvim"
+  {
+    "kyazdani42/nvim-tree.lua",
+    config = function()
+      require "config/nvim-tree"
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    config = function()
+      require "config/telescope"
+    end,
+  },
+  {
+    "fgheng/winbar.nvim",
+    config = function()
+      require "config/winbar"
+    end,
+  },
 
   -- code navigation
-  use "lukas-reineke/indent-blankline.nvim"
-  use "akinsho/bufferline.nvim"
-  use "folke/todo-comments.nvim"
-  use "norcalli/nvim-colorizer.lua"
-  use "folke/trouble.nvim"
-  use "nvim-lualine/lualine.nvim"
-  use "simrat39/symbols-outline.nvim"
-  use "craigemery/vim-autotag"
-  use "petertriho/nvim-scrollbar"
-  use "karb94/neoscroll.nvim"
+  "folke/trouble.nvim",
+  "folke/todo-comments.nvim",
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    init = function()
+      require("ibl").setup()
+    end,
+  },
+  {
+    "akinsho/bufferline.nvim",
+    config = function()
+      require "config/bufferline"
+    end,
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require "config/colorizer"
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require "config/lualine"
+    end,
+  },
+  {
+    "simrat39/symbols-outline.nvim",
+    config = function()
+      require "config/symbols-outline"
+    end,
+  },
+  {
+    "petertriho/nvim-scrollbar",
+    config = function()
+      require "config/nvim-scrollbar"
+    end,
+  },
+  {
+    "karb94/neoscroll.nvim",
+    config = function()
+      require "config/neoscroll"
+    end,
+  },
 
   -- colorschemes
-  use "catppuccin/nvim"
+  {
+    "catppuccin/nvim",
+    config = function()
+      require "config/catppuccin"
+    end,
+  },
 
   -- formatter
-  use "mhartington/formatter.nvim"
+  {
+    "mhartington/formatter.nvim",
+    config = function()
+      require "config/formatter"
+    end,
+  },
 
   -- LSP
-  use "neovim/nvim-lspconfig"
-  use "williamboman/mason.nvim"
-  use "tami5/lspsaga.nvim"
-  use "ionide/Ionide-vim"
-  use "scalameta/nvim-metals"
+  "neovim/nvim-lspconfig",
+  "williamboman/mason.nvim",
+  "tami5/lspsaga.nvim",
+  {
+    "ionide/Ionide-vim",
+    config = function()
+      vim.g["fsharp#backend"] = "disable" -- enable only syntax highlight
+    end,
+  },
+  {
+    "scalameta/nvim-metals",
+    config = function()
+      require "config/nvim-metals"
+    end,
+  },
 
   -- clojure
-  use "Olical/conjure"
-
-  -- yuck
-  use {
-    "elkowar/yuck.vim",
+  {
+    "Olical/conjure",
     config = function()
-      vim.g.yuck_align_multiline_strings = 1
-      vim.g.yuck_align_subforms = 1
-      vim.g.yuck_lisp_indentation = 1
+      require "config/conjure"
     end,
-  }
+  },
 
   -- completion
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-buffer"
-  use "hrsh7th/cmp-path"
-  use "hrsh7th/cmp-cmdline"
-  use "hrsh7th/nvim-cmp"
-  use "saadparwaiz1/cmp_luasnip"
-  use "ray-x/lsp_signature.nvim"
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "hrsh7th/cmp-cmdline",
+  "hrsh7th/nvim-cmp",
+  "saadparwaiz1/cmp_luasnip",
+  {
+    "ray-x/lsp_signature.nvim",
+    config = function()
+      require "config/lsp-signature"
+    end,
+  },
 
   -- snippets
-  use "L3MON4D3/LuaSnip"
-  use "rafamadriz/friendly-snippets"
+  "L3MON4D3/LuaSnip",
+  "rafamadriz/friendly-snippets",
 
   -- tree-sitter
-  use {
+  {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
+    build = ":TSUpdate",
+    config = function()
+      require "config/treesitter"
+    end,
+  },
 
   -- git
-  use "lewis6991/gitsigns.nvim"
-  use "tpope/vim-fugitive"
+  "tpope/vim-fugitive",
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require "config/gitsigns"
+    end,
+  },
 
   -- utils
-  use "lewis6991/impatient.nvim"
-  use "nvim-lua/plenary.nvim"
-  use "nvim-lua/popup.nvim"
-  use "jiangmiao/auto-pairs"
-  use "akinsho/toggleterm.nvim"
-  use "terrortylor/nvim-comment"
-  use "gelguy/wilder.nvim"
-  use "windwp/nvim-ts-autotag"
-  use "SmiteshP/nvim-navic"
-
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
-end)
+  "lewis6991/impatient.nvim",
+  "nvim-lua/plenary.nvim",
+  "nvim-lua/popup.nvim",
+  "jiangmiao/auto-pairs",
+  "gelguy/wilder.nvim",
+  "windwp/nvim-ts-autotag",
+  "SmiteshP/nvim-navic",
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require "config/terminal"
+    end,
+  },
+  {
+    "terrortylor/nvim-comment",
+    config = function()
+      require "config/nvim-comment"
+    end,
+  },
+}, {
+  ui = {
+    border = "single",
+  },
+})
