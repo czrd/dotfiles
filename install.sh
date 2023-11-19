@@ -1,11 +1,12 @@
 #!/bin/sh
 stow -t ~ \
   alacritty \
+  dunst \
   git \
-  nvim \
-  tmux \
-  zsh \
   hypr \
-  waybar \
   neofetch \
-  dunst
+  nvim \
+  rofi \
+  tmux \
+  waybar \
+  zsh
