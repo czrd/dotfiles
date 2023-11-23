@@ -74,9 +74,9 @@ colors: *catppuccin-latte
 font:
   size: 11.0
   normal:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMono NF
   bold:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMono NF
 window:
   decorations: full
   padding:
