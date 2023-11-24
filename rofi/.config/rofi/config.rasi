@@ -1,6 +1,6 @@
 @theme "myTheme"
 configuration {
-  font: "JetBrains Mono Nerd Font 11";
+  font: "Fira Code 11";
 	display-drun: "";
   timeout {
     action: "kb-cancel";
