@@ -38,6 +38,7 @@ keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>x", ":bdelete!<CR>", opts)
+keymap("n", "<leader><S-x>", ":BufferLineCloseOthers<CR>", opts)
 
 -- color scheme
 keymap("n", "<C-q>", "<cmd>Telescope colorscheme enable_preview=true<CR>", opts)
