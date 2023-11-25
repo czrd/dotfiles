@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Number of wallpapers available
+wallpapers=($(ls ~/.config/hypr/wallpapers/))
+length=${#wallpapers[@]}
+
+# Cache
+# https://github.com/Horus645/swww/blob/main/doc/swww-daemon.1.scd#description
+monitor=$(hyprctl monitors -j | jq -r '.[0].name')
+cache=$HOME/.cache/swww/$monitor
+[[ ! -z "$XDG_CACHE_HOME" ]] && cache=$XDG_CACHE_HOME/swww/$monitor
+
+# Current desktop image
+current=$(cat $cache)
+filename=$(basename $current)
+
+# Increment filename
+! [[ $filename =~ ^[1-9]+[0-9]*$ ]] && filename=0
+filename=$((filename + 1))
+[[ $filename -gt $length ]] && filename=1
+
+# Change desktop image
+swww img \
+  --transition-duration 1 \
+  --transition-fps 40 \
+  --transition-type wipe \
+  $HOME/.config/hypr/wallpapers/$filename
