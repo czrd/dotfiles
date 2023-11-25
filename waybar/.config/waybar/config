@@ -101,8 +101,8 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "\uebb4",
-            "default": "\uebb5"
+            "active": "",
+            "default": ""
         },
         "on-click": "activate",
         "sort-by-number": true,
