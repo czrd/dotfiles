@@ -140,6 +140,7 @@
       "spacing": 10
     },
     "disk": {
+      "tooltip": false,
       "interval": 30,
       "format": " {percentage_used}%",
       "path": "/"
