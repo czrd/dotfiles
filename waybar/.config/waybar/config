@@ -17,6 +17,7 @@
         "temperature",
         "cpu",
         "memory",
+        "disk",
         "pulseaudio",
         "tray",
         "clock"
@@ -137,5 +138,10 @@
     "tray": {
       "icon-size": 18,
       "spacing": 10
+    },
+    "disk": {
+      "interval": 30,
+      "format": " {percentage_used}%",
+      "path": "/"
     }
 }
