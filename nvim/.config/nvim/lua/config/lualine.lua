@@ -23,8 +23,8 @@ ll.setup {
     theme = {
       normal = {
         a = { fg = "#ffffff", bg = "#3760bf", gui = "bold" },
-        b = { bg = "#c4c8da" },
-        c = { bg = "#c4c8da" },
+        b = { bg = "#e6e9ef" },
+        c = { bg = "#e6e9ef" },
       },
     },
   },
