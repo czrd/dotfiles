@@ -5,12 +5,13 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config {
+  signs = true,
   virtual_text = false,
   update_in_insert = true,
   underline = true,
   severity_sort = true,
   float = {
-    focusable = false,
+    focusable = true,
     style = "minimal",
     border = "single",
     source = "always",
