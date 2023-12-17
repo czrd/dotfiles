@@ -20,6 +20,7 @@
         "disk",
         "pulseaudio",
         "tray",
+        "hyprland/language",
         "clock"
     ],
     "clock": {
@@ -144,5 +145,9 @@
       "interval": 30,
       "format": " {percentage_used}%",
       "path": "/"
+    },
+    "hyprland/language": {
+      "format-en": " 🇺🇸 ",
+      "format-ja": " 🇯🇵 "
     }
 }
