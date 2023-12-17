@@ -87,12 +87,6 @@ require("lazy").setup({
     end,
   },
   {
-    "simrat39/symbols-outline.nvim",
-    config = function()
-      require "config/symbols-outline"
-    end,
-  },
-  {
     "petertriho/nvim-scrollbar",
     config = function()
       require "config/nvim-scrollbar"
@@ -114,7 +108,39 @@ require("lazy").setup({
   },
 
   -- LSP
-  "tami5/lspsaga.nvim",
+  {
+    "nvimdev/lspsaga.nvim",
+    config = function()
+      require("lspsaga").setup {
+        ui = {
+          border = "single",
+          code_action = "💡",
+          action_fix = "💡",
+          imp_sign = "",
+          expand = "",
+          collapse = "",
+        },
+        lightbulb = {
+          enable = false,
+        },
+        outline = {
+          keys = {
+            toggle_or_jump = "<CR>",
+            jump = "<CR>",
+          },
+        },
+        callhierarchy = {
+          keys = {
+            edit = "<CR>",
+          },
+        },
+      }
+    end,
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter", -- optional
+      "nvim-tree/nvim-web-devicons", -- optional
+    },
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = {

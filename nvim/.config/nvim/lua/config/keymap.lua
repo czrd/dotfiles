@@ -26,7 +26,7 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- tagbar
-keymap("n", "T", ":SymbolsOutline<CR>", opts)
+keymap("n", "T", ":Lspsaga outline<CR>", opts)
 
 -- file explorer
 keymap("n", "<C-e>", ":NvimTreeFindFileToggle<CR>", opts)
@@ -58,18 +58,18 @@ keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
 keymap("n", "gd", "<cmd>lua require('telescope.builtin').lsp_definitions()<CR>", opts)
 keymap("n", "gi", "<cmd>lua require('telescope.builtin').lsp_implementations()<CR>", opts)
 keymap("n", "gr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", opts)
+keymap("n", "<leader>ch", "<cmd>Lspsaga incoming_calls<CR>", opts)
 
 -- actions
-keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-keymap("n", "<leader>rn", "<cmd>lua require('lspsaga.rename').rename()<CR>", opts)
-keymap("n", "<leader>ca", "<cmd>lua require('lspsaga.codeaction').code_action()<CR>", opts)
+keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
+keymap("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
+keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 
 -- diagnostic
 keymap("n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-keymap("n", "[g", "<cmd>lua require('lspsaga.diagnostic').navigate('prev')()<CR>", opts)
-keymap("n", "]g", "<cmd>lua require('lspsaga.diagnostic').navigate('next')()<CR>", opts)
-keymap("n", "gl", "<cmd>lua require('lspsaga.diagnostic').show_line_diagnostics()<CR>", opts)
-keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+keymap("n", "[g", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts)
+keymap("n", "]g", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
+keymap("n", "gl", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 
 -- format
 vim.cmd [[
