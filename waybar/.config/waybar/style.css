@@ -62,14 +62,10 @@ button:hover {
 #memory,
 #disk,
 #temperature,
-#backlight,
 #network,
 #pulseaudio,
 #tray,
 #custom-powermenu,
-#custom-poweroff,
-#custom-sleep,
-#custom-reboot,
 #custom-recording {
   padding: 0 10px;
 }
@@ -81,11 +77,6 @@ button:hover {
 
 #custom-powermenu {
   font-size: 25px;
-  margin-right: 10px;
-}
-
-#custom-poweroff, #custom-sleep, #custom-reboot {
-  font-size: 20px;
   margin-right: 10px;
 }
 

@@ -115,21 +115,6 @@
         "tooltip": false,
         "on-click": "~/.config/rofi/scripts/powermenu"
     },
-    "custom/poweroff": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "systemctl poweroff"
-    },
-    "custom/reboot": {
-        "format": "󰑓",
-        "tooltip": false,
-        "on-click": "systemctl reboot"
-    },
-    "custom/sleep": {
-        "format": "󰒲",
-        "tooltip": false,
-        "on-click": "systemctl suspend"
-    },
     "custom/recording": {
       "exec": "~/.config/waybar/scripts/recording.sh status",
       "format": "{}",
