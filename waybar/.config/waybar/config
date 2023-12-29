@@ -116,6 +116,7 @@
         "on-click": "~/.config/rofi/scripts/powermenu"
     },
     "custom/recording": {
+      "tooltip": false,
       "exec": "~/.config/waybar/scripts/recording.sh status",
       "format": "{}",
       "on-click": "~/.config/waybar/scripts/recording.sh toggle",
