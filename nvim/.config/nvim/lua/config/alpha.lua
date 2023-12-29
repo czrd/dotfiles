@@ -25,7 +25,7 @@ theta.buttons.val = {
   dashboard.button("SPC f f", "󰈞  Find file"),
   dashboard.button("SPC f g", "  Live grep"),
   dashboard.button("c", "  Configuration", "<cmd>cd ~/.config/nvim/ <CR>"),
-  dashboard.button("u", "  Update plugins", "<cmd>PackerSync<CR>"),
+  dashboard.button("u", "  Update plugins", "<cmd>Lazy update<CR>"),
   dashboard.button("q", "󰩈  Quit", "<cmd>qa<CR>"),
 }
 
