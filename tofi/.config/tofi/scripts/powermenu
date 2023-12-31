@@ -10,7 +10,7 @@ shutdown="shutdown"
 # options passed into variable
 options="$lock\n$logout\n$suspend\n$reboot\n$shutdown"
 
-chosen="$(echo -e "$options" | tofi)"
+chosen="$(echo -e "$options" | tofi --height 340)"
 case $chosen in
 $lock)
   swaylock -d -c 131921 --font-size 40px --indicator-radius 200 --indicator-thickness 5
