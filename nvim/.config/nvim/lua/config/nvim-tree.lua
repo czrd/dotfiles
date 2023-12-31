@@ -89,4 +89,9 @@ nt.setup {
     --   },
     -- },
   },
+  actions = {
+    change_dir = {
+      global = true,
+    },
+  },
 }
