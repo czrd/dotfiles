@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Number of wallpapers available
+direction=${1:-"next"}
 wallpapers=($(ls ~/.config/hypr/wallpapers/))
 length=${#wallpapers[@]}
 
@@ -16,12 +17,18 @@ filename=$(basename $current)
 
 # Increment filename
 ! [[ $filename =~ ^[1-9]+[0-9]*$ ]] && filename=0
-filename=$((filename + 1))
+[[ $direction == "prev" ]] && filename=$((filename - 1))
+[[ $direction == "next" ]] && filename=$((filename + 1))
+[[ $filename -lt 1 ]] && filename=$length
 [[ $filename -gt $length ]] && filename=1
+
+# transition direction
+[[ $direction == "prev" ]] && transition=left
+[[ $direction == "next" ]] && transition=right
 
 # Change desktop image
 swww img \
   --transition-duration 1 \
-  --transition-fps 40 \
-  --transition-type wipe \
+  --transition-fps 60 \
+  --transition-type $transition \
   $HOME/.config/hypr/wallpapers/$filename
