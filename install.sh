@@ -6,7 +6,7 @@ stow -t ~ \
   hypr \
   neofetch \
   nvim \
-  tofi \
+  rofi \
   tmux \
   waybar \
   zsh

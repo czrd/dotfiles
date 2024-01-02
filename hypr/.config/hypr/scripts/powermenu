@@ -1,16 +1,14 @@
 #!/bin/bash
-
 # options to be displayed
 lock="lock"
 logout="logout"
 suspend="suspend"
 reboot="reboot"
 shutdown="shutdown"
-
 # options passed into variable
 options="$lock\n$logout\n$suspend\n$reboot\n$shutdown"
 
-chosen="$(echo -e "$options" | tofi --height 340)"
+chosen="$(echo -e "$options" | rofi -dmenu -p "")"
 case $chosen in
 $lock)
   swaylock -d -c 131921 --font-size 40px --indicator-radius 200 --indicator-thickness 5
