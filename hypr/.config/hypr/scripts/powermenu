@@ -8,7 +8,7 @@ shutdown="shutdown"
 # options passed into variable
 options="$lock\n$logout\n$suspend\n$reboot\n$shutdown"
 
-chosen="$(echo -e "$options" | rofi -dmenu -no-fixed-num-lines -p "")"
+chosen="$(echo -e "$options" | rofi -dmenu -no-show-icons -no-fixed-num-lines -p "")"
 case $chosen in
 $lock)
   swaylock -d -c 131921 --font-size 40px --indicator-radius 200 --indicator-thickness 5
