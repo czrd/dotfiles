@@ -1,17 +1,18 @@
 * {
-    bg: #ccd0da;
-    fg: #4c4f69;
-    selected-fg: var(fg);
-    selected-bg: #acb0be;
-    separatorcolor: #949cbb;
-    background-color: transparent;
-    text-color: var(fg);
+  bg: #ccd0da;
+  fg: #4c4f69;
+  selected-fg: var(fg);
+  selected-bg: #acb0be;
+  separatorcolor: #949cbb;
+  background-color: transparent;
+  text-color: var(fg);
 }
 
 element {
-    padding: 10px 25px;
-    background-color: var(bg);
-    border-radius: 20px;
+  padding: 12px 25px;
+  background-color: var(bg);
+  border-radius: 20px;
+  spacing: 20px;
 }
 
 element selected {
@@ -20,44 +21,46 @@ element selected {
 }
 
 window {
-    width: 550px;
-    padding: 10px;
-    background-color: var(bg);
-    border-radius: 20px;
+  width: 550px;
+  padding: 10px;
+  background-color: var(bg);
+  border-radius: 20px;
 }
 
 mainbox {
-    padding: 5px;
-    background-color: var(bg);
+  padding: 5px;
+  background-color: var(bg);
 }
 
 listview {
-    padding: 10px 0px 0px ;
-    border: 1px solid 0px 0px ;
-    border-color: var(separatorcolor);
+  padding: 10px 0px 0px ;
+  border: 1px solid 0px 0px ;
+  border-color: var(separatorcolor);
 }
 
 num-filtered-rows {
-    expand: false;
-    text-color: var(fg);
+  expand: false;
+  text-color: var(fg);
 }
 
 num-rows {
-    expand: false;
-    text-color: var(fg);
+  expand: false;
+  text-color: var(fg);
 }
 
 textbox-num-sep {
-    expand: false;
-    str: "/";
-    text-color: var(fg);
+  expand: false;
+  str: "/";
+  text-color: var(fg);
 }
 
 inputbar {
-    padding: 10px;
-    children: [ "prompt","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+  padding: 10px;
+  children: [ "prompt","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 
 entry {
   margin: 0 13px;
+  placeholder: " Search";
+  placeholder-color: #8c8fa1;
 }

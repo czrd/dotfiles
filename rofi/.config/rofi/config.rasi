@@ -1,5 +1,9 @@
 @theme "catppuccin"
 configuration {
+  show-icons: true;
+  run,drun {
+    fallback-icon: "application-x-addon";
+  }
   font: "Fira Code 11";
   display-drun: "";
   timeout {
