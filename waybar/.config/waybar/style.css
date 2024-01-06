@@ -1,7 +1,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Fira Code", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
-  font-size: 14.5px;
+  font-family: "FiraCode Nerd Font", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
+  font-size: 15px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
