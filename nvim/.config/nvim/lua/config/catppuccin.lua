@@ -9,6 +9,7 @@ require("catppuccin").setup {
     LspInfoBorder = { link = "FloatBorder" },
     TelescopeBorder = { link = "Normal" },
     FloatBorder = { link = "Normal" },
+    IblScope = { fg = "#acb0be", bg = "#eff1f5" },
   },
 }
 
