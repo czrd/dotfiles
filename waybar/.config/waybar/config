@@ -11,6 +11,7 @@
     "modules-center": [
     ],
     "modules-right": [
+        "tray",
         "custom/recording",
         "network",
         "battery",
@@ -19,7 +20,6 @@
         "memory",
         "disk",
         "pulseaudio",
-        "tray",
         "hyprland/language",
         "clock"
     ],
@@ -54,8 +54,8 @@
             "critical": 15
         },
         "format": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-icons": [
             "",
             "",
@@ -75,14 +75,14 @@
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "{icon}  {volume}% {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": "  {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon}  {format_source}",
+        "format-muted": "󰝟  {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
