@@ -1,1 +1,1 @@
-export PS1='%F{#7287fd}%f '
+export PS1='%F{#6c6f85}%f '
