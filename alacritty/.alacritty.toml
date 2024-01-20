@@ -15,7 +15,7 @@ dim_foreground = "#4C4F69"
 foreground = "#4C4F69"
 
 [colors.cursor]
-cursor = "#DC8A78"
+cursor = "#7287fd"
 text = "#EFF1F5"
 
 [colors.selection]
@@ -25,6 +25,9 @@ text = "#EFF1F5"
 [colors.vi_mode_cursor]
 cursor = "#7288FD"
 text = "#EFF1F5"
+
+[cursor]
+thickness = 0.2
 
 [font]
 size = 11.0
