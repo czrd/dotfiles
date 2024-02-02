@@ -1,12 +1,12 @@
 [colors.normal]
 black = "#5C5F77"
-blue = "#1E66F5"
+blue = "#4285F4"
 cyan = "#179299"
-green = "#40A02B"
-magenta = "#EA76CB"
-red = "#D20F39"
+green = "#0F9D58"
+magenta = "#C71C56"
+red = "#DB4437"
 white = "#ACB0BE"
-yellow = "#DF8E1D"
+yellow = "#F4B400"
 
 [colors.primary]
 background = "#EFF1F5"
@@ -15,15 +15,15 @@ dim_foreground = "#4C4F69"
 foreground = "#4C4F69"
 
 [colors.cursor]
-cursor = "#7287fd"
+cursor = "#4285F4"
 text = "#EFF1F5"
 
 [colors.selection]
-background = "#8aadf4"
+background = "#e6e9ef"
 text = "#EFF1F5"
 
 [colors.vi_mode_cursor]
-cursor = "#7288FD"
+cursor = "#4285F4"
 text = "#EFF1F5"
 
 [cursor]
