@@ -10,7 +10,7 @@ require("catppuccin").setup {
   custom_highlights = {
     Visual = { bg = "#e6e9ef" },
     NormalFloat = { link = "Normal" },
-    PmenuSel = { fg = "#ffffff", bg = "#3760bf" },
+    PmenuSel = { fg = "#ffffff", bg = "#4285F4" },
     Search = { fg = "#ffffff", bg = "#febd69" },
     MatchParen = { link = "Search" },
     LspInfoBorder = { link = "FloatBorder" },
