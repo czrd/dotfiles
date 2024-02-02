@@ -22,7 +22,7 @@ ll.setup {
     globalstatus = true,
     theme = {
       normal = {
-        a = { fg = "#ffffff", bg = "#6c6f85" },
+        a = { fg = "#ffffff", bg = "#4285F4" },
         b = { bg = "#e6e9ef" },
         c = { bg = "#e6e9ef" },
       },
