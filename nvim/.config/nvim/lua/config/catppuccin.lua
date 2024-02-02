@@ -2,6 +2,7 @@ require("catppuccin").setup {
   flavour = "latte",
   term_colors = true,
   custom_highlights = {
+    Visual = { bg = "#e6e9ef" },
     NormalFloat = { link = "Normal" },
     PmenuSel = { fg = "#ffffff", bg = "#3760bf" },
     Search = { fg = "#ffffff", bg = "#febd69" },
