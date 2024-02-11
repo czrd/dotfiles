@@ -17,7 +17,24 @@ theta.header.val = {
   [[⠀⠀⠀⠙⢿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
 }
 
-theta.header.opts.hl = "Delimiter"
+-- theta.header.opts.hl = "Delimiter"
+vim.api.nvim_set_hl(0, "NeoVimLogoGreen", { fg = "#367533" })
+vim.api.nvim_set_hl(0, "NeoVimLogoBlue", { fg = "#0F59B2" })
+theta.header.opts.hl = {
+  { { "NeoVimLogoGreen", 0, 65 } },
+  { { "NeoVimLogoGreen", 0, 65 } },
+  { { "NeoVimLogoGreen", 0, 65 } },
+  { { "NeoVimLogoBlue", 0, 5 }, { "NeoVimLogoGreen", 6, 65 } },
+  { { "NeoVimLogoBlue", 0, 10 }, { "NeoVimLogoGreen", 11, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+  { { "NeoVimLogoBlue", 0, 18 }, { "NeoVimLogoGreen", 18, 65 } },
+}
 theta.buttons.val = {
   { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
   { type = "padding", val = 1 },
