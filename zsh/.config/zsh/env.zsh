@@ -12,10 +12,6 @@ eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 
-# rbenv
-# https://github.com/rbenv/rbenv
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
-
 # rust
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ]; then

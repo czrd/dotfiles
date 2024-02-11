@@ -9,5 +9,4 @@ stow -t ~ \
   rofi \
   tmux \
   waybar \
-  zsh \
-  lf
+  zsh
