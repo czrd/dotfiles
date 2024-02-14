@@ -172,14 +172,6 @@ require("lazy").setup({
     end,
   },
 
-  -- clojure
-  {
-    "Olical/conjure",
-    config = function()
-      require "config/conjure"
-    end,
-  },
-
   -- completion
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-buffer",
