@@ -177,7 +177,7 @@ require("lazy").setup({
   {
     "scalameta/nvim-metals",
     config = function()
-      require "config/nvim-metals"
+      vim.cmd [[autocmd FileType scala,sbt lua require("metals").initialize_or_attach({})]]
     end,
   },
 
@@ -250,7 +250,9 @@ require("lazy").setup({
   {
     "terrortylor/nvim-comment",
     config = function()
-      require "config/nvim-comment"
+      require("nvim_comment").setup {
+        comment_empty = false,
+      }
     end,
   },
 }, {
