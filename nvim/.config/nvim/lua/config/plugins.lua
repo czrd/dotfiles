@@ -209,7 +209,7 @@ require("lazy").setup({
   {
     "lewis6991/gitsigns.nvim",
     config = function()
-      require "config/gitsigns"
+      require("gitsigns").setup()
     end,
   },
 
