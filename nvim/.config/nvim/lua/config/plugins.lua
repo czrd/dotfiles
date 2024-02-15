@@ -47,7 +47,10 @@ require("lazy").setup({
   {
     "fgheng/winbar.nvim",
     config = function()
-      require "config/winbar"
+      require("winbar").setup {
+        enabled = true,
+        show_symbols = true,
+      }
     end,
   },
 
