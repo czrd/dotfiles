@@ -219,8 +219,13 @@ require("lazy").setup({
   "nvim-lua/popup.nvim",
   "jiangmiao/auto-pairs",
   "gelguy/wilder.nvim",
-  "windwp/nvim-ts-autotag",
   "SmiteshP/nvim-navic",
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
   {
     "akinsho/toggleterm.nvim",
     config = function()
