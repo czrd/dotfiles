@@ -92,7 +92,9 @@ require("lazy").setup({
   {
     "petertriho/nvim-scrollbar",
     config = function()
-      require "config/nvim-scrollbar"
+      require("scrollbar").setup {
+        show_in_active_only = true,
+      }
     end,
   },
   {
