@@ -182,7 +182,13 @@ require("lazy").setup({
   {
     "ray-x/lsp_signature.nvim",
     config = function()
-      require "config/lsp-signature"
+      require("lsp_signature").setup {
+        hint_enable = false,
+        transparency = 20,
+        handler_opts = {
+          border = "single",
+        },
+      }
     end,
   },
 
