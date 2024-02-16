@@ -39,15 +39,6 @@ formatter.setup {
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
     },
-    clojure = function()
-      return {
-        exe = "cljstyle",
-        args = {
-          "pipe",
-        },
-        stdin = true,
-      }
-    end,
     go = {
       require("formatter.filetypes.go").goimports,
       require("formatter.filetypes.go").gofumpt,
