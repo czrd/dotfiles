@@ -132,6 +132,7 @@ require("lazy").setup({
           enable = false,
         },
         outline = {
+          win_width = 50,
           keys = {
             toggle_or_jump = "<CR>",
             jump = "<CR>",
