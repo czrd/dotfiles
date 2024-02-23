@@ -173,12 +173,6 @@ require("lazy").setup({
       }
     end,
   },
-  {
-    "scalameta/nvim-metals",
-    config = function()
-      vim.cmd [[autocmd FileType scala,sbt lua require("metals").initialize_or_attach({})]]
-    end,
-  },
 
   -- completion
   "hrsh7th/cmp-nvim-lsp",
