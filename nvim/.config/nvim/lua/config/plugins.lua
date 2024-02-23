@@ -174,12 +174,6 @@ require("lazy").setup({
     end,
   },
   {
-    "ionide/Ionide-vim",
-    config = function()
-      vim.g["fsharp#backend"] = "disable" -- enable only syntax highlight
-    end,
-  },
-  {
     "scalameta/nvim-metals",
     config = function()
       vim.cmd [[autocmd FileType scala,sbt lua require("metals").initialize_or_attach({})]]
