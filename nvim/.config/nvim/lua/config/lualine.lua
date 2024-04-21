@@ -20,12 +20,12 @@ ll.setup {
   },
   options = {
     globalstatus = true,
-    theme = {
-      normal = {
-        a = { fg = "#ffffff", bg = "#4285F4" },
-        b = { bg = "#e6e9ef" },
-        c = { bg = "#e6e9ef" },
-      },
-    },
+    -- theme = {
+    --   normal = {
+    --     a = { fg = "#ffffff", bg = "#4285F4" },
+    --     b = { bg = "#e6e9ef" },
+    --     c = { bg = "#e6e9ef" },
+    --   },
+    -- },
   },
 }

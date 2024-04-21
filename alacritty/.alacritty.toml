@@ -1,30 +1,30 @@
 [colors.normal]
-black = "#5C5F77"
-blue = "#4285F4"
-cyan = "#179299"
-green = "#0F9D58"
-magenta = "#C71C56"
-red = "#DB4437"
-white = "#ACB0BE"
-yellow = "#F4B400"
+black = "#0D0B10"
+blue = "#40739A"
+cyan = "#3B8187"
+green = "#59795F"
+magenta = "#9E6253"
+red = "#9D4B53"
+white = "#D1D3CC"
+yellow = "#A78A58"
 
 [colors.primary]
-background = "#EFF1F5"
-bright_foreground = "#4C4F69"
-dim_foreground = "#4C4F69"
-foreground = "#4C4F69"
+background = "#E1E4DC"
+bright_foreground = "#2E2C2F"
+dim_foreground = "#2E2C2F"
+foreground = "#2E2C2F"
 
 [colors.cursor]
-cursor = "#4285F4"
-text = "#EFF1F5"
+cursor = "#516E56"
+text = "#E1E4DC"
 
 [colors.selection]
-background = "#e6e9ef"
-text = "#EFF1F5"
+background = "#D1D3CC"
+text = "#3E3D3F"
 
 [colors.vi_mode_cursor]
-cursor = "#4285F4"
-text = "#EFF1F5"
+cursor = "#516E56"
+text = "#E1E4DC"
 
 [cursor]
 thickness = 0.2
