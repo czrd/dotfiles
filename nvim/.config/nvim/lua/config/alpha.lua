@@ -17,7 +17,7 @@ theta.header.val = {
   [[⠀⠀⠀⠙⢿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
 }
 
-theta.header.opts.hl = "NonText"
+theta.header.opts.hl = "Comment"
 theta.buttons.val = {
   { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
   { type = "padding", val = 1 },
