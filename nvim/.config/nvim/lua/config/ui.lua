@@ -7,7 +7,7 @@ vim.diagnostic.config {
     focusable = true,
     style = "minimal",
     border = "single",
-    source = "always",
+    source = true,
     header = "",
     prefix = "",
   },
