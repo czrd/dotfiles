@@ -2,8 +2,8 @@
     "layer": "top",
     "position": "top",
     "height": 40,
-    "margin-left": 16,
-    "margin-right": 16,
+    "margin-left": 10,
+    "margin-right": 10,
     "margin-top": 10,
     "spacing": 2,
     "modules-left": [
