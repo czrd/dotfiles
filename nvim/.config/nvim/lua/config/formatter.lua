@@ -20,6 +20,10 @@ formatter.setup {
     sh = {
       require("formatter.filetypes.sh").shfmt,
     },
+    html = {
+      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint_d,
+    },
     javascript = {
       require("formatter.filetypes.javascript").prettier,
       require("formatter.filetypes.javascript").eslint_d,
