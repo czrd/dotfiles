@@ -24,7 +24,7 @@ filename=$(basename $current)
 
 # transition direction
 [[ $direction == "prev" ]] && transition=left
-[[ $direction == "next" ]] && transition=right
+[[ $direction == "next" ]] && transition=wipe
 
 # Change desktop image
 swww img \
