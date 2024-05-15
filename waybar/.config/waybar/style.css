@@ -26,16 +26,14 @@ tooltip label {
 }
 
 window#waybar {
-  color: #D7DCDD;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: #3E3D3F;
+  background-color: #E1E4DC;
+  border-radius: 80px;
+  border: 1px solid #C0C3BD;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
-}
-
-button {
-  color: #D7DCDD;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -50,6 +48,11 @@ button:hover {
   box-shadow: none;
   text-shadow: none;
   border: none;
+  color: #C0C3BD;
+}
+
+#workspaces button.active {
+  color: #3E3D3F;
 }
 
 #workspaces button.urgent {
@@ -70,13 +73,19 @@ button:hover {
   padding: 0 10px;
 }
 
+#tray {
+  background-color: #D1D3CC;
+  margin: 4px 10px;
+  border-radius: 15px;
+}
+
 #custom-recording {
   font-size: 20px;
   color: #f53c3c;
 }
 
 #custom-powermenu {
-  font-size: 25px;
+  font-size: 24px;
   margin-right: 10px;
 }
 

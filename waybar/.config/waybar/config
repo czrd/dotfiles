@@ -1,8 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "width": 1920,
+    "height": 40,
+    "margin-left": 16,
+    "margin-right": 16,
+    "margin-top": 10,
     "spacing": 2,
     "modules-left": [
         "custom/powermenu",
@@ -104,7 +106,7 @@
         "format": "{icon}",
         "format-icons": {
             "active": "",
-            "default": ""
+            "default": "",
         },
         "on-click": "activate",
         "sort-by-number": true,
@@ -112,8 +114,7 @@
     },
     "custom/powermenu": {
         "format": "",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/scripts/powermenu"
+        "tooltip": false
     },
     "custom/recording": {
       "tooltip": false,
