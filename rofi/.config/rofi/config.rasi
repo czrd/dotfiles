@@ -1,4 +1,4 @@
-@theme "catppuccin"
+@theme "leaf"
 configuration {
   show-icons: true;
   run,drun {
