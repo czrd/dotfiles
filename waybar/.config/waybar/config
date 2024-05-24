@@ -5,16 +5,14 @@
     "margin-left": 10,
     "margin-right": 10,
     "margin-top": 10,
-    "spacing": 2,
+    "spacing": 0,
     "modules-left": [
         "custom/powermenu",
         "hyprland/workspaces"
     ],
-    "modules-center": [
-    ],
     "modules-right": [
-        "tray",
         "custom/recording",
+        "tray",
         "network",
         "battery",
         "temperature",
@@ -22,7 +20,6 @@
         "memory",
         "disk",
         "pulseaudio",
-        "hyprland/language",
         "clock"
     ],
     "clock": {
@@ -135,6 +132,7 @@
     },
     "hyprland/language": {
       "format-en": " 🇺🇸 ",
-      "format-ja": " 🇯🇵 "
+      "format-ja": " 🇯🇵 ",
+      "keyboard-name": "at-translated-set-2-keyboard"
     }
 }

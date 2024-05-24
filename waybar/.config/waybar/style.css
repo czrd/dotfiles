@@ -1,3 +1,4 @@
+/** common */
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: "FiraCode Nerd Font", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
@@ -25,6 +26,8 @@ tooltip label {
   font-size: 15px;
 }
 
+/** bar */
+
 window#waybar {
   color: #3E3D3F;
   background-color: #E1E4DC;
@@ -44,6 +47,19 @@ button:hover {
   background: inherit;
 }
 
+#custom-powermenu {
+  font-size: 24px;
+  margin: 0 10px 0 20px;
+  color: #3E3D3F;
+}
+
+#workspaces {
+  background-color: #D1D3CC;
+  padding: 0 22px;
+  margin: 4px 20px;
+  border-radius: 20px;
+}
+
 #workspaces button {
   box-shadow: none;
   text-shadow: none;
@@ -59,40 +75,79 @@ button:hover {
   color: #f53c3c;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#network,
-#pulseaudio,
-#tray,
-#custom-powermenu,
-#custom-recording {
-  padding: 0 10px;
-}
-
+/** section 1 */
 #tray {
   background-color: #D1D3CC;
   margin: 4px 10px;
+  padding: 0 20px;
   border-radius: 15px;
 }
 
-#custom-recording {
-  font-size: 20px;
-  color: #f53c3c;
+/** section 2 */
+#network {
+  background-color: #D1D3CC;
+  padding: 0 10px 0 20px;
+  margin: 4px 0px;
+  border-radius: 20px 0px 0px 20px;
 }
 
-#custom-powermenu {
-  font-size: 24px;
-  margin-right: 10px;
+#battery {
+  background-color: #D1D3CC;
+  padding: 0 10px;
+  margin: 4px 0px;
 }
 
 #battery.critical:not(.charging) {
   color: #f53c3c;
 }
 
+#temperature {
+  background-color: #D1D3CC;
+  padding: 0 20px 0 10px;
+  margin: 4px 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
 #temperature.critical {
   color: #f53c3c;
+}
+
+/** section 3 */
+#cpu {
+  background-color: #D1D3CC;
+  padding: 0 10px 0 20px;
+  margin: 4px 0px 4px 10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#memory {
+  background-color: #D1D3CC;
+  padding: 0 10px;
+  margin: 4px 0px;
+}
+
+#disk {
+  background-color: #D1D3CC;
+  padding: 0 20px 0 10px;
+  margin: 4px 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/** section 4 */
+#pulseaudio {
+  background-color: #D1D3CC;
+  padding: 0 20px;
+  margin: 4px 10px;
+  border-radius: 20px;
+}
+
+/** section 5 */
+#clock {
+  margin: 0 20px 0 10px;
+}
+
+#custom-recording {
+  font-size: 20px;
+  color: #f53c3c;
+  padding: 0 20px;
 }
