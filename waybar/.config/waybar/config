@@ -129,10 +129,5 @@
       "interval": 30,
       "format": " {percentage_used}%",
       "path": "/"
-    },
-    "hyprland/language": {
-      "format-en": " 🇺🇸 ",
-      "format-ja": " 🇯🇵 ",
-      "keyboard-name": "at-translated-set-2-keyboard"
     }
 }
