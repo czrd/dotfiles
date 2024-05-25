@@ -30,7 +30,7 @@ text = "#E1E4DC"
 thickness = 0.2
 
 [font]
-size = 11.0
+size = 12.0
 
 [font.normal]
 family = "Monaspace Neon"
