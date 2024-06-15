@@ -84,17 +84,11 @@ button:hover {
 }
 
 /** section 2 */
-#network {
+#battery {
   background-color: #D1D3CC;
   padding: 0 10px 0 20px;
   margin: 4px 0px;
   border-radius: 20px 0px 0px 20px;
-}
-
-#battery {
-  background-color: #D1D3CC;
-  padding: 0 10px;
-  margin: 4px 0px;
 }
 
 #battery.critical:not(.charging) {
@@ -103,21 +97,18 @@ button:hover {
 
 #temperature {
   background-color: #D1D3CC;
-  padding: 0 20px 0 10px;
+  padding: 0 10px;
   margin: 4px 0px;
-  border-radius: 0px 20px 20px 0px;
 }
 
 #temperature.critical {
   color: #f53c3c;
 }
 
-/** section 3 */
 #cpu {
   background-color: #D1D3CC;
-  padding: 0 10px 0 20px;
-  margin: 4px 0px 4px 10px;
-  border-radius: 20px 0px 0px 20px;
+  padding: 0 10px;
+  margin: 4px 0px;
 }
 
 #memory {
@@ -133,7 +124,7 @@ button:hover {
   border-radius: 0px 20px 20px 0px;
 }
 
-/** section 4 */
+/** section 3 */
 #pulseaudio {
   background-color: #D1D3CC;
   padding: 0 20px;
