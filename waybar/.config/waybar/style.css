@@ -84,21 +84,11 @@ button:hover {
 }
 
 /** section 2 */
-#battery {
+#temperature {
   background-color: #D1D3CC;
   padding: 0 10px 0 20px;
   margin: 4px 0px;
   border-radius: 20px 0px 0px 20px;
-}
-
-#battery.critical:not(.charging) {
-  color: #f53c3c;
-}
-
-#temperature {
-  background-color: #D1D3CC;
-  padding: 0 10px;
-  margin: 4px 0px;
 }
 
 #temperature.critical {
