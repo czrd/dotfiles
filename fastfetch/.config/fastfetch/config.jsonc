@@ -1,0 +1,40 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "color": "bright_red"
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────",
+      "outputColor": "light_black"
+    },
+    "break",
+    "os",
+    "kernel",
+    "break",
+    "de",
+    "wm",
+    "break",
+    "packages",
+    "shell",
+    "break",
+    "cpu",
+    {
+      "type": "gpu",
+      "driverSpecific": false,
+      "hideType": "integrated"
+    },
+    "memory",
+    "swap",
+    "break",
+    "break",
+    "break",
+    "colors",
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────",
+      "outputColor": "light_black"
+    },
+  ]
+}

@@ -4,7 +4,7 @@ stow -t ~ \
   dunst \
   git \
   hypr \
-  neofetch \
+  fastfetch \
   nvim \
   rofi \
   tmux \
