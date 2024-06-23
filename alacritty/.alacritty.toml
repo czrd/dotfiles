@@ -28,6 +28,7 @@ text = "#E1E4DC"
 
 [window]
 title = ""
+startup_mode = "Maximized"
 
 [cursor]
 thickness = 0.2
