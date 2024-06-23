@@ -79,7 +79,13 @@ formatter.setup {
     ["*"] = {
       -- "formatter.filetypes.any" defines default configurations for any
       -- filetype
-      require("formatter.filetypes.any").remove_trailing_whitespace,
+      function()
+        local defined_types = require("formatter.config").values.filetype
+        if defined_types[vim.bo.filetype] ~= nil then
+          return nil
+        end
+        vim.lsp.buf.format { async = true }
+      end,
     },
   },
 }

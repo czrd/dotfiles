@@ -66,7 +66,6 @@ keymap("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
 keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 
 -- diagnostic
-keymap("n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 keymap("n", "[g", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts)
 keymap("n", "]g", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 keymap("n", "gl", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
