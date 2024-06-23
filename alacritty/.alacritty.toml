@@ -26,6 +26,9 @@ text = "#3E3D3F"
 cursor = "#516E56"
 text = "#E1E4DC"
 
+[window]
+title = ""
+
 [cursor]
 thickness = 0.2
 
