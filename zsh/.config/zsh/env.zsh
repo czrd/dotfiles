@@ -18,3 +18,6 @@ export PATH="$PATH:/home/czrd/.local/share/coursier/bin"
 # volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Load Angular CLI autocompletion.
+command -v ng &> /dev/null && source <(ng completion script)
