@@ -23,12 +23,6 @@ require("lazy").setup({
       vim.cmd "colorscheme leaf"
     end,
   },
-  {
-    "catppuccin/nvim",
-    config = function()
-      -- require "config/catppuccin"
-    end,
-  },
 
   -- icons
   "kyazdani42/nvim-web-devicons",
