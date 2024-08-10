@@ -71,6 +71,7 @@ keymap("n", "]g", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 keymap("n", "gl", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 
 -- format
+keymap("n", "<leader>f", "<cmd>FormatWrite<CR>", opts)
 vim.cmd [[
   augroup LspFormatting
     autocmd!
