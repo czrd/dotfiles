@@ -40,6 +40,9 @@ formatter.setup {
       require("formatter.filetypes.javascript").prettier,
       require("formatter.filetypes.javascript").eslint_d,
     },
+    htmlangular = {
+      require("formatter.filetypes.javascript").prettier,
+    },
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
     },
