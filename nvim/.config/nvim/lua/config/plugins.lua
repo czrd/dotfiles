@@ -45,7 +45,7 @@ require("lazy").setup({
               LspReferenceText = { bg = colors.crust },
               LspReferenceRead = { bg = colors.crust },
               LspReferenceWrite = { bg = colors.crust },
-              ["@function.builtin"] = { fg = colors.yellow },
+              ["@function.builtin"] = { fg = colors.flamingo },
             }
           end,
         },
