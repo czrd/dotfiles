@@ -9,7 +9,7 @@ thickness = 0.2
 size = 13.0
 
 [font.normal]
-family = "Monaspace Neon"
+family = "JetBrainsMono Nerd Font"
 
 [colors.primary]
 background = "#eff1f5"
