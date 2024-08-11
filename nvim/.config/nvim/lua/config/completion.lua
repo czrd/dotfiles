@@ -15,11 +15,13 @@ require("luasnip/loaders/from_vscode").lazy_load()
 cmp.setup {
   window = {
     documentation = {
-      border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+      -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+      border = { "┏", "━", "┓", "┃", "┛", "━", "┗", "┃" },
       winhighlight = "FloatBorder:FloatBorder",
     },
     completion = {
-      border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+      -- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+      border = { "┏", "━", "┓", "┃", "┛", "━", "┗", "┃" },
       winhighlight = "CursorLine:PmenuSel,FloatBorder:FloatBorder",
     },
   },
