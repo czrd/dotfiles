@@ -8,7 +8,8 @@ telescope.setup {
   defaults = {
     winblend = 20,
     prompt_prefix = "",
-    borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+    -- borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+    borderchars = { "━", "┃", "━", "┃", "┏", "┓", "┛", "┗" },
     file_ignore_patterns = { ".git", "node_modules", ".cache", "target", "dest", ".bloop", ".metals", ".idea", ".g8" },
     vimgrep_arguments = {
       "rg",
