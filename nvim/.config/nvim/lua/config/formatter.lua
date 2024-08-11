@@ -22,26 +22,27 @@ formatter.setup {
     },
     html = {
       require("formatter.filetypes.javascript").prettier,
-      require("formatter.filetypes.javascript").eslint_d,
+      require("formatter.filetypes.javascript").eslint,
     },
     javascript = {
       require("formatter.filetypes.javascript").prettier,
-      require("formatter.filetypes.javascript").eslint_d,
+      require("formatter.filetypes.javascript").eslint,
     },
     javascriptreact = {
       require("formatter.filetypes.javascript").prettier,
-      require("formatter.filetypes.javascript").eslint_d,
+      require("formatter.filetypes.javascript").eslint,
     },
     typescript = {
-      require("formatter.filetypes.javascript").prettier,
-      require("formatter.filetypes.javascript").eslint_d,
+      require("formatter.filetypes.typescript").prettier,
+      require("formatter.filetypes.typescript").eslint,
     },
     typescriptreact = {
-      require("formatter.filetypes.javascript").prettier,
-      require("formatter.filetypes.javascript").eslint_d,
+      require("formatter.filetypes.typescriptreact").prettier,
+      require("formatter.filetypes.typescriptreact").eslint,
     },
     htmlangular = {
       require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").eslint,
     },
     ocaml = {
       require("formatter.filetypes.ocaml").ocamlformat,
