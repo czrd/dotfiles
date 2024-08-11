@@ -103,7 +103,10 @@ require("lazy").setup({
     init = function()
       require("ibl").setup {
         indent = {
-          char = "│",
+          char = "┃",
+          highlight = {
+            "WinSeparator",
+          },
         },
         scope = {
           show_start = false,
