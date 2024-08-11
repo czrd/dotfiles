@@ -8,5 +8,5 @@
 
 ```
 git clone git@github.com:czrd/dotfiles.git
-cd dotfiles && ./install.sh
+cd dotfiles && ./setup.sh
 ```
