@@ -20,7 +20,35 @@ require("lazy").setup({
         theme = "light",
         contrast = "low",
       }
-      vim.cmd "colorscheme leaf"
+      -- vim.cmd "colorscheme leaf"
+    end,
+  },
+  {
+    "catppuccin/nvim",
+    config = function()
+      require("catppuccin").setup {
+        flavor = "latte",
+        integrations = {},
+        color_overrides = {
+          latte = {
+            blue = "#0277BD",
+          },
+        },
+        highlight_overrides = {
+          all = function(colors)
+            return {
+              Visual = { bg = colors.mantle, style = {} },
+              NormalFloat = { link = "Normal" },
+              FloatBorder = { fg = colors.overlay1 },
+              LspReferenceText = { bg = colors.crust },
+              LspReferenceRead = { bg = colors.crust },
+              LspReferenceWrite = { bg = colors.crust },
+              ["@function.builtin"] = { fg = colors.yellow },
+            }
+          end,
+        },
+      }
+      vim.cmd "colorscheme catppuccin"
     end,
   },
 
