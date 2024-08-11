@@ -4,49 +4,53 @@ if not ok then
   return
 end
 
+local catppuccin = require "catppuccin.utils.lualine" "latte"
 local palette = require("catppuccin.palettes").get_palette "latte"
 
-local catppuccin = require "catppuccin.utils.lualine" "latte"
-catppuccin.normal.a.fg = palette.text
-catppuccin.normal.a.bg = palette.surface2
-catppuccin.normal.b.fg = palette.text
-catppuccin.normal.b.bg = palette.surface1
-catppuccin.normal.c.bg = palette.base
+local main_section = { fg = palette.base, bg = palette.red, gui = "bold" }
+local sub_section = { fg = palette.text, bg = palette.crust }
+local hidden_section = { fg = palette.base, bg = palette.base }
 
-catppuccin.command.a.fg = palette.text
-catppuccin.command.a.bg = palette.surface2
-catppuccin.command.b.fg = palette.text
-catppuccin.command.b.bg = palette.surface1
+catppuccin.normal.a = main_section
+catppuccin.normal.b = sub_section
+catppuccin.normal.c = hidden_section
+catppuccin.normal.z = sub_section
 
-catppuccin.terminal.a.fg = palette.text
-catppuccin.terminal.a.bg = palette.surface2
-catppuccin.terminal.b.fg = palette.text
-catppuccin.terminal.b.bg = palette.surface1
+catppuccin.command.a = main_section
+catppuccin.command.b = sub_section
+catppuccin.command.c = hidden_section
+catppuccin.command.z = sub_section
 
-catppuccin.insert.a.fg = palette.text
-catppuccin.insert.a.bg = palette.surface2
-catppuccin.insert.b.fg = palette.text
-catppuccin.insert.b.bg = palette.surface1
+catppuccin.terminal.a = main_section
+catppuccin.terminal.b = sub_section
+catppuccin.terminal.c = hidden_section
+catppuccin.terminal.z = sub_section
 
-catppuccin.visual.a.fg = palette.text
-catppuccin.visual.a.bg = palette.surface2
-catppuccin.visual.b.fg = palette.text
-catppuccin.visual.b.bg = palette.surface1
+catppuccin.insert.a = main_section
+catppuccin.insert.b = sub_section
+catppuccin.insert.c = hidden_section
+catppuccin.insert.z = sub_section
 
-catppuccin.replace.a.fg = palette.text
-catppuccin.replace.a.bg = palette.surface2
-catppuccin.replace.b.fg = palette.text
-catppuccin.replace.b.bg = palette.surface1
+catppuccin.visual.a = main_section
+catppuccin.visual.b = sub_section
+catppuccin.visual.c = hidden_section
+catppuccin.visual.z = sub_section
 
-catppuccin.inactive.a.fg = palette.text
-catppuccin.inactive.a.bg = palette.surface2
-catppuccin.inactive.b.fg = palette.text
-catppuccin.inactive.b.bg = palette.surface1
-catppuccin.inactive.c.bg = palette.base
+catppuccin.replace.a = main_section
+catppuccin.replace.b = sub_section
+catppuccin.replace.c = hidden_section
+catppuccin.replace.z = sub_section
+
+catppuccin.inactive.a = main_section
+catppuccin.inactive.b = sub_section
+catppuccin.inactive.c = hidden_section
+catppuccin.inactive.z = sub_section
 
 ll.setup {
   sections = {
-    lualine_a = { "mode" },
+    lualine_a = {
+      { "mode", separator = { left = "", right = "" }, right_padding = 3 },
+    },
     lualine_b = {
       "branch",
       "diff",
@@ -54,12 +58,18 @@ ll.setup {
       "filename",
     },
     lualine_c = {},
-    lualine_x = { "encoding", "fileformat", "filetype", "progress", "location" },
+    lualine_x = {},
     lualine_y = {},
-    lualine_z = {},
+    lualine_z = {
+      "encoding",
+      "progress",
+      "filetype",
+    },
   },
   options = {
     theme = catppuccin,
     globalstatus = true,
+    section_separators = { left = "", right = "" },
+    component_separators = { left = "", right = "" },
   },
 }
