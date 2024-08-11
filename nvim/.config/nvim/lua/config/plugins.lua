@@ -32,7 +32,6 @@ require("lazy").setup({
         color_overrides = {
           latte = {
             blue = "#0277BD",
-            yellow = "#FFD54F",
           },
         },
         highlight_overrides = {
