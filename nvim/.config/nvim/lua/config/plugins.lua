@@ -32,12 +32,14 @@ require("lazy").setup({
         color_overrides = {
           latte = {
             blue = "#0277BD",
+            yellow = "#FFD54F",
           },
         },
         highlight_overrides = {
           all = function(colors)
             return {
               Visual = { bg = colors.mantle, style = {} },
+              Search = { fg = colors.black, bg = colors.yellow },
               NormalFloat = { link = "Normal" },
               FloatBorder = { fg = colors.overlay1 },
               LspReferenceText = { bg = colors.crust },
