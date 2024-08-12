@@ -3,6 +3,9 @@
   "display": {
     "color": "bright_red"
   },
+  "logo": {
+    "source": "arch2"
+  },
   "modules": [
     {
       "type": "custom",
