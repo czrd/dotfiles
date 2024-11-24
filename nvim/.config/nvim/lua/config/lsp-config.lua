@@ -68,7 +68,7 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     disable_formatting(client)
@@ -135,6 +135,11 @@ lspconfig.html.setup {
 }
 
 lspconfig.angularls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+
+lspconfig.emmet_ls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
