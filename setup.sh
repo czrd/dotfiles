@@ -9,4 +9,5 @@ stow -t ~ \
   rofi \
   tmux \
   waybar \
-  zsh
+  zsh \
+  intellij
