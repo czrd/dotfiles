@@ -30,6 +30,7 @@
     },
     "memory",
     "swap",
+    "disk",
     "break",
     "break",
     "break",
