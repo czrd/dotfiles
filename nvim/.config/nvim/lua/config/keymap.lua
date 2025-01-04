@@ -54,11 +54,8 @@ keymap("n", "<C-g>", "<cmd>lua _TOGGLE_LAZYGIT()<CR>", opts)
 keymap("n", "<C-t>", "<cmd>TroubleToggle<CR>", opts)
 
 -- goto
-keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-keymap("n", "gd", "<cmd>lua require('telescope.builtin').lsp_definitions()<CR>", opts)
-keymap("n", "gi", "<cmd>lua require('telescope.builtin').lsp_implementations()<CR>", opts)
-keymap("n", "gr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", opts)
-keymap("n", "<leader>ch", "<cmd>Lspsaga incoming_calls<CR>", opts)
+keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", opts)
+keymap("n", "gi", "<cmd>Lspsaga finder<CR>", opts)
 
 -- actions
 keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
