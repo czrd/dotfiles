@@ -9,7 +9,6 @@ eval "$(pyenv init --path)"
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
 fi
-. "$HOME/.cargo/env"
 
 # >>> coursier install directory >>>
 export PATH="$PATH:/home/czrd/.local/share/coursier/bin"
