@@ -1,3 +1,5 @@
+export TERM=xterm-256color
+
 # pyenv
 # https://github.com/pyenv/pyenv
 export PYENV_ROOT="$HOME/.pyenv"

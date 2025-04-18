@@ -1,15 +1,13 @@
-export TERM=xterm-256color
-
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
-plug "esc/conda-zsh-completion"
-plug "zsh-users/zsh-autosuggestions"
-plug "hlissner/zsh-autopair"
+plug "zap-zsh/exa"
+plug "zap-zsh/fzf"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/vim"
-plug "zap-zsh/fzf"
-plug "zap-zsh/exa"
+plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "esc/conda-zsh-completion"
+plug "hlissner/zsh-autopair"
 
 plug "$HOME/.config/zsh/alias.zsh"
 plug "$HOME/.config/zsh/env.zsh"
