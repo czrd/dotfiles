@@ -143,3 +143,8 @@ lspconfig.emmet_ls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
+
+lspconfig.zls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}

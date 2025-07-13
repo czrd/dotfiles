@@ -80,6 +80,9 @@ formatter.setup {
     markdown = {
       require("formatter.filetypes.markdown").prettier,
     },
+    zig = {
+      require("formatter.filetypes.zig").zigfmt,
+    },
     ["*"] = {
       -- "formatter.filetypes.any" defines default configurations for any
       -- filetype
