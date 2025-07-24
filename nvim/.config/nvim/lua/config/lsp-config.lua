@@ -1,12 +1,14 @@
-local ok, lspconfig = pcall(require, "lspconfig")
+local ok, cmp_nvim = pcall(require, "cmp_nvim_lsp")
 if not ok then
-  print "lspconfig is not installed"
+  print "cmp_nvim_lsp is not installed"
   return
 end
 
 require("lspconfig.ui.windows").default_options = {
   border = "single",
 }
+
+local capabilities = cmp_nvim.default_capabilities()
 
 local on_attach = function(client, bufnr)
   if client.server_capabilities.documentHighlightProvider then
@@ -30,20 +32,18 @@ local on_attach = function(client, bufnr)
   end
 end
 
-local disable_formatting = function(client)
-  client.server_capabilities.document_formatting = false
-  client.server_capabilities.document_range_formatting = false
-end
+vim.lsp.enable "bashls"
+vim.lsp.enable "clangd"
+vim.lsp.enable "emmet_ls"
+vim.lsp.enable "gopls"
+vim.lsp.enable "html"
+vim.lsp.enable "lua_ls"
+vim.lsp.enable "rust_analyzer"
+vim.lsp.enable "tailwindcss"
+vim.lsp.enable "ts_ls"
+vim.lsp.enable "zls"
 
-local ok2, cmp_nvim = pcall(require, "cmp_nvim_lsp")
-if not ok2 then
-  print "cmp_nvim_lsp is not installed"
-  return
-end
-
-local capabilities = cmp_nvim.default_capabilities()
-
-lspconfig.lua_ls.setup {
+vim.lsp.config("lua_ls", {
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
@@ -66,85 +66,33 @@ lspconfig.lua_ls.setup {
       },
     },
   },
-}
+})
 
-lspconfig.ts_ls.setup {
+vim.lsp.config("ts_ls", {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
-    disable_formatting(client)
+    client.server_capabilities.document_formatting = false
+    client.server_capabilities.document_range_formatting = false
     on_attach(client, bufnr)
   end,
-}
+})
 
-lspconfig.clojure_lsp.setup {
-  capabilities = capabilities,
-  on_attach = function(client, bufnr)
-    disable_formatting(client)
-    on_attach(client, bufnr)
-  end,
-}
-
-lspconfig.rust_analyzer.setup {
+vim.lsp.config("rust_analyzer", {
   capabilities = capabilities,
   on_attach = on_attach,
-}
+})
 
-lspconfig.gopls.setup {
+vim.lsp.config("gopls", {
   capabilities = capabilities,
   on_attach = on_attach,
-}
+})
 
-lspconfig.vuels.setup {
+vim.lsp.config("clangd", {
   capabilities = capabilities,
   on_attach = on_attach,
-}
+})
 
-lspconfig.pylsp.setup {
+vim.lsp.config("bashls", {
   capabilities = capabilities,
   on_attach = on_attach,
-  settings = {
-    pylsp = {
-      plugins = {
-        rope_autoimport = {
-          enabled = true,
-          eager = true,
-        },
-      },
-    },
-  },
-}
-
-lspconfig.clangd.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.bashls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.tailwindcss.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.html.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.angularls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.emmet_ls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-
-lspconfig.zls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
+})
