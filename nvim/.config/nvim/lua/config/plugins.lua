@@ -159,10 +159,10 @@ require("lazy").setup({
         ui = {
           border = "single",
           code_action = "💡",
-          action_fix = "💡",
           imp_sign = "",
           expand = "",
           collapse = "",
+          lines = { "└", "├", "│", "─", "┌" },
         },
         lightbulb = {
           enable = false,
