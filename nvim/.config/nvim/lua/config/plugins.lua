@@ -40,7 +40,7 @@ require("lazy").setup({
               Visual = { bg = colors.mantle, style = {} },
               Search = { fg = colors.black, bg = colors.yellow },
               NormalFloat = { link = "Normal" },
-              FloatBorder = { fg = colors.overlay1 },
+              FloatBorder = { fg = colors.overlay1, bg = colors.base },
               LspReferenceText = { bg = colors.crust },
               LspReferenceRead = { bg = colors.crust },
               LspReferenceWrite = { bg = colors.crust },
