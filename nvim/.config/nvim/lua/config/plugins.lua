@@ -45,6 +45,8 @@ require("lazy").setup({
               LspReferenceText = { bg = colors.crust },
               LspReferenceRead = { bg = colors.crust },
               LspReferenceWrite = { bg = colors.crust },
+              IblScope = { fg = colors.overlay0 },
+              IblIndent = { fg = colors.overlay3 },
               ["@function.builtin"] = { fg = colors.flamingo },
             }
           end,
@@ -106,9 +108,6 @@ require("lazy").setup({
       require("ibl").setup {
         indent = {
           char = "│",
-          highlight = {
-            "WinSeparator",
-          },
         },
         scope = {
           show_start = false,
