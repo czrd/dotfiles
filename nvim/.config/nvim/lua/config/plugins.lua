@@ -41,6 +41,7 @@ require("lazy").setup({
               Search = { fg = colors.black, bg = colors.yellow },
               NormalFloat = { link = "Normal" },
               FloatBorder = { fg = colors.overlay1, bg = colors.base },
+              PmenuSel = { fg = colors.text, bg = colors.lavender },
               LspReferenceText = { bg = colors.crust },
               LspReferenceRead = { bg = colors.crust },
               LspReferenceWrite = { bg = colors.crust },
