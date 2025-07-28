@@ -9,10 +9,10 @@ local palette = require("catppuccin.palettes").get_palette "latte"
 
 local main1_section = { fg = palette.base, bg = palette.lavender, gui = "bold" }
 local main2_section = { fg = palette.text, bg = palette.crust }
-local hidden_section = { fg = palette.base, bg = palette.base }
 local sub1_section = { fg = palette.text, bg = palette.surface2 }
 local sub2_section = { fg = palette.text, bg = palette.surface1 }
 local sub3_section = { fg = palette.text, bg = palette.surface0 }
+local hidden_section = { fg = palette.base, bg = palette.base }
 
 catppuccin.normal.a = main1_section
 catppuccin.normal.b = main2_section
