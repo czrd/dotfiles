@@ -76,10 +76,10 @@ ll.setup {
     },
     lualine_c = {},
     lualine_x = {
-      { "encoding", separator = { left = "", right = "" }, right_padding = 3 },
+      { "progress", separator = { left = "", right = "" }, right_padding = 3 },
     },
     lualine_y = {
-      { "progress", separator = { left = "", right = "" }, right_padding = 3 },
+      { "encoding", separator = { left = "", right = "" }, right_padding = 3 },
     },
     lualine_z = {
       { "filetype", separator = { left = "", right = "" } },
