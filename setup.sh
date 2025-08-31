@@ -9,4 +9,5 @@ stow -t ~ \
   zsh \
   intellij \
   lf \
-  wezterm
+  wezterm \
+  lazygit
