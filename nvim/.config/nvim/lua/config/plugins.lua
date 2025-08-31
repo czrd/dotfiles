@@ -308,7 +308,6 @@ require("lazy").setup({
   "lewis6991/impatient.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-lua/popup.nvim",
-  "jiangmiao/auto-pairs",
   "gelguy/wilder.nvim",
   "SmiteshP/nvim-navic",
   {
