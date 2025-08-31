@@ -7,5 +7,6 @@ stow -t ~ \
   nvim \
   tmux \
   zsh \
-  intellij\
-  lf
+  intellij \
+  lf \
+  wezterm
