@@ -3,24 +3,33 @@
   "display": {
     "color": "green"
   },
-  "logo": {
-    "source": "arch2"
-  },
   "modules": [
+    "os",
+    "kernel",
+    "break",
     {
       "type": "custom",
       "format": "──────────────────────────────────────────",
       "outputColor": "light_black"
     },
     "break",
-    "os",
-    "kernel",
-    "break",
     "de",
     "wm",
     "break",
-    "packages",
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────",
+      "outputColor": "light_black"
+    },
+    "break",
     "shell",
+    "packages",
+    "break",
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────",
+      "outputColor": "light_black"
+    },
     "break",
     "cpu",
     {
@@ -29,16 +38,6 @@
       "hideType": "integrated"
     },
     "memory",
-    "swap",
     "disk",
-    "break",
-    "break",
-    "break",
-    "colors",
-    {
-      "type": "custom",
-      "format": "──────────────────────────────────────────",
-      "outputColor": "light_black"
-    },
   ]
 }
