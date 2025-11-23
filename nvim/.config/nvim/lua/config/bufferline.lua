@@ -14,5 +14,8 @@ bl.setup {
     indicator_selected = {
       fg = "#59795F",
     },
+    fill = {
+      bg = '#eff1f5'
+    },
   },
 }
