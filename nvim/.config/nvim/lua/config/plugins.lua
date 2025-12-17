@@ -12,6 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- icons
+  "kyazdani42/nvim-web-devicons",
+
   -- colorschemes
   {
     "catppuccin/nvim",
@@ -19,9 +22,6 @@ require("lazy").setup({
       require "config/catppuccin"
     end,
   },
-
-  -- icons
-  "kyazdani42/nvim-web-devicons",
 
   -- start screen
   {
@@ -59,25 +59,15 @@ require("lazy").setup({
   "folke/todo-comments.nvim",
   {
     "akinsho/bufferline.nvim",
+    dependencies = { "catppuccin/nvim" },
     config = function()
       require "config/bufferline"
     end,
-    dependencies = {
-      "catppuccin/nvim",
-    },
   },
   {
     "lukas-reineke/indent-blankline.nvim",
     init = function()
-      require("ibl").setup {
-        indent = {
-          char = "│",
-        },
-        scope = {
-          show_start = false,
-          show_end = false,
-        },
-      }
+      require("ibl").setup { indent = { char = "│" }, scope = { show_start = false, show_end = false } }
     end,
   },
   {
@@ -95,9 +85,7 @@ require("lazy").setup({
   {
     "petertriho/nvim-scrollbar",
     config = function()
-      require("scrollbar").setup {
-        show_in_active_only = true,
-      }
+      require("scrollbar").setup { show_in_active_only = true }
     end,
   },
   {
@@ -118,13 +106,10 @@ require("lazy").setup({
   -- LSP
   {
     "nvimdev/lspsaga.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     config = function()
       require "config/lspsaga"
     end,
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter", -- optional
-      "nvim-tree/nvim-web-devicons", -- optional
-    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -267,8 +252,4 @@ require("lazy").setup({
     event = "InsertEnter",
     config = true,
   },
-}, {
-  ui = {
-    border = "single",
-  },
-})
+}, { ui = { border = "single" } })
