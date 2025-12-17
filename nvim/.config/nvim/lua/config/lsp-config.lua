@@ -1,14 +1,6 @@
-local ok, cmp_nvim = pcall(require, "cmp_nvim_lsp")
-if not ok then
-  print "cmp_nvim_lsp is not installed"
-  return
-end
-
 require("lspconfig.ui.windows").default_options = {
   border = "single",
 }
-
-local capabilities = cmp_nvim.default_capabilities()
 
 local on_attach = function(client, bufnr)
   if client.server_capabilities.documentHighlightProvider then
@@ -45,7 +37,6 @@ vim.lsp.enable "ts_ls"
 vim.lsp.enable "zls"
 
 vim.lsp.config("lua_ls", {
-  capabilities = capabilities,
   on_attach = on_attach,
   settings = {
     Lua = {
@@ -70,7 +61,6 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.config("ts_ls", {
-  capabilities = capabilities,
   on_attach = function(client, bufnr)
     client.server_capabilities.document_formatting = false
     client.server_capabilities.document_range_formatting = false
@@ -79,21 +69,17 @@ vim.lsp.config("ts_ls", {
 })
 
 vim.lsp.config("rust_analyzer", {
-  capabilities = capabilities,
   on_attach = on_attach,
 })
 
 vim.lsp.config("gopls", {
-  capabilities = capabilities,
   on_attach = on_attach,
 })
 
 vim.lsp.config("clangd", {
-  capabilities = capabilities,
   on_attach = on_attach,
 })
 
 vim.lsp.config("bashls", {
-  capabilities = capabilities,
   on_attach = on_attach,
 })

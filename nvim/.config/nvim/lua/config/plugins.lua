@@ -188,9 +188,6 @@ require("lazy").setup({
   },
   {
     "neovim/nvim-lspconfig",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-    },
     config = function()
       require "config.lsp-config"
     end,
@@ -212,12 +209,6 @@ require("lazy").setup({
   },
 
   -- completion
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
-  "hrsh7th/cmp-path",
-  "hrsh7th/cmp-cmdline",
-  "hrsh7th/nvim-cmp",
-  "saadparwaiz1/cmp_luasnip",
   {
     "ray-x/lsp_signature.nvim",
     config = function()

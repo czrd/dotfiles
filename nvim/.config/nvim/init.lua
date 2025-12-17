@@ -1,5 +1,4 @@
 require "config/general"
 require "config/plugins"
 require "config/keymap"
-require "config/completion"
 require "config.ui"
