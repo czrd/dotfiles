@@ -22,3 +22,4 @@ vim.opt.pumheight = 10 -- pop up menu height
 vim.opt.shortmess:append "c"
 vim.opt.pumblend = 20
 vim.opt.winblend = 20
+vim.o.winborder = "single"
