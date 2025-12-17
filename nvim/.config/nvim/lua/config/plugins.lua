@@ -120,6 +120,31 @@ require("lazy").setup({
       require "config/mason"
     end,
   },
+  {
+    "saghen/blink.cmp",
+    dependencies = { "rafamadriz/friendly-snippets" },
+    build = "cargo build --release",
+    opts_extend = { "sources.default" },
+    opts = {
+      keymap = { preset = "enter" },
+      appearance = { nerd_font_variant = "mono" },
+      completion = {
+        documentation = { auto_show = true, window = { max_width = 120 } },
+        ghost_text = { enabled = true },
+        menu = {
+          draw = {
+            columns = {
+              { "kind_icon" },
+              { "label", "label_description" },
+            },
+          },
+        },
+      },
+      sources = { default = { "lsp", "path", "snippets", "buffer" } },
+      fuzzy = { implementation = "prefer_rust_with_warning" },
+      signature = { enabled = true },
+    },
+  },
 
   -- completion
   {
@@ -157,6 +182,7 @@ require("lazy").setup({
   "nvim-lua/popup.nvim",
   "gelguy/wilder.nvim",
   "SmiteshP/nvim-navic",
+  { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   {
     "windwp/nvim-ts-autotag",
     config = function()
@@ -174,10 +200,5 @@ require("lazy").setup({
     config = function()
       require("nvim_comment").setup { comment_empty = false }
     end,
-  },
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = true,
   },
 }, { ui = { border = "single" } })
