@@ -14,16 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   -- colorschemes
   {
-    "daschw/leaf.nvim",
-    config = function()
-      require("leaf").setup {
-        theme = "light",
-        contrast = "low",
-      }
-      -- vim.cmd "colorscheme leaf"
-    end,
-  },
-  {
     "catppuccin/nvim",
     config = function()
       require("catppuccin").setup {
