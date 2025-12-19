@@ -128,21 +128,18 @@ require("lazy").setup({
     opts = {
       keymap = { preset = "enter" },
       appearance = { nerd_font_variant = "mono" },
+      sources = { default = { "lsp", "path", "snippets", "buffer" } },
+      fuzzy = { implementation = "prefer_rust_with_warning" },
+      signature = { enabled = false },
       completion = {
         documentation = { auto_show = true, window = { max_width = 120 } },
         ghost_text = { enabled = true },
         menu = {
           draw = {
-            columns = {
-              { "kind_icon" },
-              { "label", "label_description" },
-            },
+            columns = { { "kind_icon" }, { "label", "label_description" } },
           },
         },
       },
-      sources = { default = { "lsp", "path", "snippets", "buffer" } },
-      fuzzy = { implementation = "prefer_rust_with_warning" },
-      signature = { enabled = true },
     },
   },
 
