@@ -132,7 +132,7 @@ require("lazy").setup({
       fuzzy = { implementation = "prefer_rust_with_warning" },
       signature = { enabled = false },
       completion = {
-        documentation = { auto_show = true, window = { max_width = 120 } },
+        documentation = { auto_show = true },
         ghost_text = { enabled = true },
         menu = {
           draw = {
@@ -197,5 +197,23 @@ require("lazy").setup({
     config = function()
       require("nvim_comment").setup { comment_empty = false }
     end,
+  },
+  {
+    "folke/noice.nvim",
+    dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
+    event = "VeryLazy",
+    opts = {
+      lsp = {
+        signature = { enabled = false },
+      },
+    },
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      max_width = 60,
+      max_height = 5,
+      render = "wrapped-compact",
+    },
   },
 }, { ui = { border = "single" } })
