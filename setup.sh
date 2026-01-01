@@ -10,4 +10,5 @@ stow -t ~ \
   intellij \
   lf \
   wezterm \
-  lazygit
+  lazygit \
+  sheldon

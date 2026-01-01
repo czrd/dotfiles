@@ -1,0 +1,71 @@
+# `sheldon` configuration file
+# ----------------------------
+#
+# You can modify this file directly or you can use one of the following
+# `sheldon` commands which are provided to assist in editing the config file:
+#
+# - `sheldon add` to add a new plugin to the config file
+# - `sheldon edit` to open up the config file in the default editor
+# - `sheldon remove` to remove a plugin from the config file
+#
+# See the documentation for more https://github.com/rossmacarthur/sheldon#readme
+
+shell = "zsh"
+
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
+[plugins]
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[plugins.zsh-vi-mode]
+github = "jeffreytse/zsh-vi-mode"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
+
+[plugins.conda-zsh-completion]
+github = "conda-incubator/conda-zsh-completion"
+apply = ["defer"]
+
+[plugins.autopair]
+github = "hlissner/zsh-autopair"
+apply = ["defer"]
+
+[plugins.completion]
+local = "~/.config/zsh"
+use = ["completion.zsh"]
+
+[plugins.history]
+local = "~/.config/zsh"
+use = ["history.zsh"]
+
+[plugins.alias]
+local = "~/.config/zsh"
+use = ["alias.zsh"]
+
+[plugins.keybinds]
+local = "~/.config/zsh"
+use = ["keybinds.zsh"]
+apply = ["defer"]
+
+[plugins.env]
+local = "~/.config/zsh"
+use = ["env.zsh"]
+apply = ["defer"]
+
+[plugins.prompt]
+local = "~/.config/zsh"
+use = ["prompt.zsh"]
+apply = ["defer"]
+
+[plugins.fzf]
+local = "~/.config/zsh"
+use = ["fzf.zsh"]
+apply = ["defer"]
