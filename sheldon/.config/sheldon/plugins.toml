@@ -42,9 +42,14 @@ use = ["completion.zsh"]
 local = "~/.config/zsh"
 use = ["history.zsh"]
 
+[plugins.prompt]
+local = "~/.config/zsh"
+use = ["prompt.zsh"]
+
 [plugins.alias]
 local = "~/.config/zsh"
 use = ["alias.zsh"]
+apply = ["defer"]
 
 [plugins.keybinds]
 local = "~/.config/zsh"
@@ -54,11 +59,6 @@ apply = ["defer"]
 [plugins.env]
 local = "~/.config/zsh"
 use = ["env.zsh"]
-apply = ["defer"]
-
-[plugins.prompt]
-local = "~/.config/zsh"
-use = ["prompt.zsh"]
 apply = ["defer"]
 
 [plugins.fzf]
