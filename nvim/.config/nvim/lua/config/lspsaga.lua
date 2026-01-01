@@ -7,6 +7,9 @@ require("lspsaga").setup {
     collapse = "",
     lines = { "└", "├", "│", "─", "┌" },
   },
+  hover = {
+    max_width = 0.3,
+  },
   lightbulb = {
     enable = false,
   },
