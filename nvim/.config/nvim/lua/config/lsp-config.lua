@@ -16,6 +16,7 @@ end
 local servers = {
   { "bashls" },
   { "clangd" },
+  { "docker_language_server" },
   { "emmet_ls" },
   { "gopls" },
   { "html" },

@@ -7,7 +7,7 @@ end
 local catppuccin = require "catppuccin.utils.lualine" "latte"
 local palette = require("catppuccin.palettes").get_palette "latte"
 
-local main1_section = { fg = palette.base, bg = palette.lavender, gui = "bold" }
+local main1_section = { fg = palette.base, bg = palette.yellow, gui = "bold" }
 local main2_section = { fg = palette.text, bg = palette.crust }
 local sub1_section = { fg = palette.text, bg = palette.surface2 }
 local sub2_section = { fg = palette.text, bg = palette.surface1 }
