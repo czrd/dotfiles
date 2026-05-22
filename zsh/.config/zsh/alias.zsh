@@ -2,6 +2,7 @@ alias v=nvim
 alias g=git
 alias t=tmux
 alias lg=lazygit
+alias c=claude
 
 # bat-cat
 if command -v bat &> /dev/null; then
