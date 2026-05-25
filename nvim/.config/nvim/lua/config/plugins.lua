@@ -27,7 +27,6 @@ require("lazy").setup({
     priority = 1000,
     config = function()
       require("zero").setup {
-        style = "light",
         plugins = {
           all = true,
         },
