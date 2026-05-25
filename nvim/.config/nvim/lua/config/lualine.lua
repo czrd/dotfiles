@@ -4,64 +4,64 @@ if not ok then
   return
 end
 
-local catppuccin = require "catppuccin.utils.lualine" "latte"
-local palette = require("catppuccin.palettes").get_palette "latte"
+local zero = require "zero.utils.lualine"
+local palette = require("zero").get_palette()
 
-local main1_section = { fg = palette.base, bg = palette.yellow, gui = "bold" }
-local main2_section = { fg = palette.text, bg = palette.crust }
-local sub1_section = { fg = palette.text, bg = palette.surface2 }
-local sub2_section = { fg = palette.text, bg = palette.surface1 }
-local sub3_section = { fg = palette.text, bg = palette.surface0 }
-local hidden_section = { fg = palette.base, bg = palette.base }
+local main1_section = { fg = palette.bg, bg = palette.green, gui = "bold" }
+local main2_section = { fg = palette.fg, bg = palette.bg_dark }
+local sub1_section = { fg = palette.fg, bg = palette.bg_dark }
+local sub2_section = { fg = palette.fg, bg = palette.bg_dark }
+local sub3_section = { fg = palette.fg, bg = palette.bg_dark }
+local hidden_section = { fg = palette.bg, bg = palette.bg }
 
-catppuccin.normal.a = main1_section
-catppuccin.normal.b = main2_section
-catppuccin.normal.c = hidden_section
-catppuccin.normal.x = sub1_section
-catppuccin.normal.y = sub2_section
-catppuccin.normal.z = sub3_section
+zero.normal.a = main1_section
+zero.normal.b = main2_section
+zero.normal.c = hidden_section
+zero.normal.x = sub1_section
+zero.normal.y = sub2_section
+zero.normal.z = sub3_section
 
-catppuccin.command.a = main1_section
-catppuccin.command.b = main2_section
-catppuccin.command.c = hidden_section
-catppuccin.command.x = sub1_section
-catppuccin.command.y = sub2_section
-catppuccin.command.z = sub3_section
+zero.command.a = main1_section
+zero.command.b = main2_section
+zero.command.c = hidden_section
+zero.command.x = sub1_section
+zero.command.y = sub2_section
+zero.command.z = sub3_section
 
-catppuccin.terminal.a = main1_section
-catppuccin.terminal.b = main2_section
-catppuccin.terminal.c = hidden_section
-catppuccin.terminal.x = sub1_section
-catppuccin.terminal.y = sub2_section
-catppuccin.terminal.z = sub3_section
+zero.terminal.a = main1_section
+zero.terminal.b = main2_section
+zero.terminal.c = hidden_section
+zero.terminal.x = sub1_section
+zero.terminal.y = sub2_section
+zero.terminal.z = sub3_section
 
-catppuccin.insert.a = main1_section
-catppuccin.insert.b = main2_section
-catppuccin.insert.c = hidden_section
-catppuccin.insert.x = sub1_section
-catppuccin.insert.y = sub2_section
-catppuccin.insert.z = sub3_section
+zero.insert.a = main1_section
+zero.insert.b = main2_section
+zero.insert.c = hidden_section
+zero.insert.x = sub1_section
+zero.insert.y = sub2_section
+zero.insert.z = sub3_section
 
-catppuccin.visual.a = main1_section
-catppuccin.visual.b = main2_section
-catppuccin.visual.c = hidden_section
-catppuccin.visual.x = sub1_section
-catppuccin.visual.y = sub2_section
-catppuccin.visual.z = sub3_section
+zero.visual.a = main1_section
+zero.visual.b = main2_section
+zero.visual.c = hidden_section
+zero.visual.x = sub1_section
+zero.visual.y = sub2_section
+zero.visual.z = sub3_section
 
-catppuccin.replace.a = main1_section
-catppuccin.replace.b = main2_section
-catppuccin.replace.c = hidden_section
-catppuccin.replace.x = sub1_section
-catppuccin.replace.y = sub2_section
-catppuccin.replace.z = sub3_section
+zero.replace.a = main1_section
+zero.replace.b = main2_section
+zero.replace.c = hidden_section
+zero.replace.x = sub1_section
+zero.replace.y = sub2_section
+zero.replace.z = sub3_section
 
-catppuccin.inactive.a = main1_section
-catppuccin.inactive.b = main2_section
-catppuccin.inactive.c = hidden_section
-catppuccin.inactive.x = sub1_section
-catppuccin.inactive.y = sub2_section
-catppuccin.inactive.z = sub3_section
+zero.inactive.a = main1_section
+zero.inactive.b = main2_section
+zero.inactive.c = hidden_section
+zero.inactive.x = sub1_section
+zero.inactive.y = sub2_section
+zero.inactive.z = sub3_section
 
 ll.setup {
   sections = {
@@ -87,7 +87,7 @@ ll.setup {
     },
   },
   options = {
-    theme = catppuccin,
+    theme = zero,
     globalstatus = true,
     section_separators = { left = "", right = "" },
     component_separators = { left = "", right = "" },

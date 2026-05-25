@@ -19,7 +19,20 @@ require("lazy").setup({
   {
     "catppuccin/nvim",
     config = function()
-      require "config/catppuccin"
+      -- require "config/catppuccin"
+    end,
+  },
+  {
+    "czrd/zero.nvim",
+    priority = 1000,
+    config = function()
+      require("zero").setup {
+        style = "light",
+        plugins = {
+          all = true,
+        },
+      }
+      vim.cmd "colorscheme zero"
     end,
   },
 

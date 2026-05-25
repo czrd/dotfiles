@@ -4,6 +4,8 @@ if not ok then
   return
 end
 
+local zero = require("zero").get_palette()
+
 bl.setup {
   options = {
     show_buffer_close_icons = false,
@@ -15,22 +17,22 @@ bl.setup {
   },
   highlights = {
     indicator_selected = {
-      fg = "#eff1f5",
+      fg = zero.bg,
     },
     indicator_visible = {
-      fg = "#eff1f5",
+      fg = zero.bg,
     },
     separator = {
-      fg = "#eff1f5",
+      fg = zero.bg,
     },
     separator_selected = {
-      fg = "#eff1f5",
+      fg = zero.bg,
     },
     separator_visible = {
-      fg = "#eff1f5",
+      fg = zero.bg,
     },
     fill = {
-      bg = "#eff1f5",
+      fg = zero.bg,
     },
   },
 }

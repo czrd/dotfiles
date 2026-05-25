@@ -19,17 +19,17 @@ cd dotfiles && ./setup.sh
 
 Each directory mirrors the target path relative to `$HOME`:
 
-| Package | Target |
-|---|---|
-| `nvim/` | `~/.config/nvim/` — Neovim config (Lua, lazy.nvim) |
-| `zsh/` | `~/.config/zsh/`, `~/.zshrc`, `~/.profile` |
-| `tmux/` | `~/.tmux.conf` |
-| `wezterm/` | `~/.config/wezterm/wezterm.lua` |
-| `sheldon/` | `~/.config/sheldon/plugins.toml` — zsh plugin manager |
-| `lazygit/` | `~/.config/lazygit/` |
-| `lf/` | `~/.config/lf/` |
-| `git/` | `~/.gitconfig` |
-| `intellij/` | `~/.ideavimrc` |
+| Package     | Target                                                |
+| ----------- | ----------------------------------------------------- |
+| `nvim/`     | `~/.config/nvim/` — Neovim config (Lua, lazy.nvim)    |
+| `zsh/`      | `~/.config/zsh/`, `~/.zshrc`, `~/.profile`            |
+| `tmux/`     | `~/.tmux.conf`                                        |
+| `wezterm/`  | `~/.config/wezterm/wezterm.lua`                       |
+| `sheldon/`  | `~/.config/sheldon/plugins.toml` — zsh plugin manager |
+| `lazygit/`  | `~/.config/lazygit/`                                  |
+| `lf/`       | `~/.config/lf/`                                       |
+| `git/`      | `~/.gitconfig`                                        |
+| `intellij/` | `~/.ideavimrc`                                        |
 
 ## Neovim architecture
 
