@@ -13,24 +13,24 @@ if appearance:find("Dark") then
 		active_titlebar_fg = "#141519",
 		inactive_titlebar_border_bottom = "#141519",
 		active_titlebar_border_bottom = "#141519",
-		button_fg = "#f7f8fa",
+		button_fg = "#f4f5f7",
 		button_bg = "#141519",
-		button_hover_fg = "#f7f8fa",
+		button_hover_fg = "#f4f5f7",
 		button_hover_bg = "#141519",
 	}
 else
 	config.color_scheme = "zero-light"
 	config.window_frame = {
-		inactive_titlebar_bg = "#f7f8fa",
-		active_titlebar_bg = "#f7f8fa",
-		inactive_titlebar_fg = "#f7f8fa",
-		active_titlebar_fg = "#f7f8fa",
-		inactive_titlebar_border_bottom = "#f7f8fa",
-		active_titlebar_border_bottom = "#f7f8fa",
-		button_fg = "#aab0bb",
-		button_bg = "#f7f8fa",
-		button_hover_fg = "#aab0bb",
-		button_hover_bg = "#f7f8fa",
+		inactive_titlebar_bg = "#f4f5f7",
+		active_titlebar_bg = "#f4f5f7",
+		inactive_titlebar_fg = "#f4f5f7",
+		active_titlebar_fg = "#f4f5f7",
+		inactive_titlebar_border_bottom = "#f4f5f7",
+		active_titlebar_border_bottom = "#f4f5f7",
+		button_fg = "#9ba2ad",
+		button_bg = "#f4f5f7",
+		button_hover_fg = "#9ba2ad",
+		button_hover_bg = "#f4f5f7",
 	}
 end
 
