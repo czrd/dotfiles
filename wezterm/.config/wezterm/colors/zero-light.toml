@@ -1,0 +1,56 @@
+# zero.nvim — Light
+# https://github.com/your-username/zero.nvim
+
+[colors]
+foreground    = "#1b1d24"
+background    = "#f7f8fa"
+cursor_bg     = "#0c7d43"
+cursor_border = "#0c7d43"
+cursor_fg     = "#f7f8fa"
+selection_bg  = "#cdebd9"
+selection_fg  = "#1b1d24"
+
+ansi = [
+  "#e2e4e8",
+  "#d61f3a",
+  "#0c7d43",
+  "#847000",
+  "#2070d0",
+  "#6a30db",
+  "#0a7268",
+  "#5b626e",
+]
+
+brights = [
+  "#aab0bb",
+  "#b81731",
+  "#0a6b3a",
+  "#6f5e00",
+  "#1a5fb0",
+  "#5826bd",
+  "#086158",
+  "#1b1d24",
+]
+
+[colors.tab_bar]
+background = "#eceef1"
+
+[colors.tab_bar.active_tab]
+bg_color  = "#f7f8fa"
+fg_color  = "#0c7d43"
+
+[colors.tab_bar.inactive_tab]
+bg_color  = "#eceef1"
+fg_color  = "#5b626e"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color  = "#ffffff"
+fg_color  = "#1b1d24"
+
+[colors.tab_bar.new_tab]
+bg_color  = "#eceef1"
+fg_color  = "#aab0bb"
+
+[colors.tab_bar.new_tab_hover]
+bg_color  = "#ffffff"
+fg_color  = "#0c7d43"

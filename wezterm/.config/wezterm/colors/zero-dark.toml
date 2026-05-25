@@ -1,0 +1,60 @@
+# zero.nvim — Dark
+# https://github.com/your-username/zero.nvim
+#
+# Usage: include this file in your wezterm.lua:
+#   local scheme = wezterm.color.load_scheme("/path/to/zero-dark.toml")
+#   config.colors = scheme
+
+[colors]
+foreground    = "#eef0f4"
+background    = "#141519"
+cursor_bg     = "#36e07e"
+cursor_border = "#36e07e"
+cursor_fg     = "#141519"
+selection_bg  = "#2e3b33"
+selection_fg  = "#eef0f4"
+
+ansi = [
+  "#1c1d24",
+  "#ff5c5c",
+  "#36e07e",
+  "#f2d24c",
+  "#4ea6ff",
+  "#a98cff",
+  "#2fd9c8",
+  "#c8ccd6",
+]
+
+brights = [
+  "#4b5160",
+  "#ff7b7b",
+  "#5fe89a",
+  "#f7dd6e",
+  "#6fb8ff",
+  "#bfa6ff",
+  "#5fe3d6",
+  "#eef0f4",
+]
+
+[colors.tab_bar]
+background = "#0f1013"
+
+[colors.tab_bar.active_tab]
+bg_color  = "#141519"
+fg_color  = "#36e07e"
+
+[colors.tab_bar.inactive_tab]
+bg_color  = "#0f1013"
+fg_color  = "#b8bcc6"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color  = "#1c1d24"
+fg_color  = "#eef0f4"
+
+[colors.tab_bar.new_tab]
+bg_color  = "#0f1013"
+fg_color  = "#4b5160"
+
+[colors.tab_bar.new_tab_hover]
+bg_color  = "#1c1d24"
+fg_color  = "#36e07e"
