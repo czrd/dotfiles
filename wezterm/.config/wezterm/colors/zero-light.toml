@@ -2,55 +2,55 @@
 # https://github.com/your-username/zero.nvim
 
 [colors]
-foreground    = "#1b1d24"
-background    = "#f7f8fa"
-cursor_bg     = "#0c7d43"
-cursor_border = "#0c7d43"
-cursor_fg     = "#f7f8fa"
-selection_bg  = "#cdebd9"
-selection_fg  = "#1b1d24"
+foreground    = "#242731"
+background    = "#f4f5f7"
+cursor_bg     = "#0c8045"
+cursor_border = "#0c8045"
+cursor_fg     = "#f4f5f7"
+selection_bg  = "#c5e3d0"
+selection_fg  = "#242731"
 
 ansi = [
-  "#e2e4e8",
+  "#d8dce3",
   "#d61f3a",
-  "#0c7d43",
-  "#847000",
-  "#2070d0",
-  "#6a30db",
-  "#0a7268",
-  "#5b626e",
+  "#0c8045",
+  "#7d6a00",
+  "#1d6fd0",
+  "#7138df",
+  "#0b766c",
+  "#636b78",
 ]
 
 brights = [
-  "#aab0bb",
-  "#b81731",
-  "#0a6b3a",
-  "#6f5e00",
-  "#1a5fb0",
-  "#5826bd",
-  "#086158",
-  "#1b1d24",
+  "#9ba2ad",
+  "#bf1731",
+  "#0b713b",
+  "#6d5c00",
+  "#1a61b9",
+  "#602cc7",
+  "#096960",
+  "#242731",
 ]
 
 [colors.tab_bar]
-background = "#eceef1"
+background = "#e8eaee"
 
 [colors.tab_bar.active_tab]
-bg_color  = "#f7f8fa"
-fg_color  = "#0c7d43"
+bg_color  = "#f4f5f7"
+fg_color  = "#0c8045"
 
 [colors.tab_bar.inactive_tab]
-bg_color  = "#eceef1"
-fg_color  = "#5b626e"
+bg_color  = "#e8eaee"
+fg_color  = "#636b78"
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color  = "#ffffff"
-fg_color  = "#1b1d24"
+bg_color  = "#fbfcfd"
+fg_color  = "#242731"
 
 [colors.tab_bar.new_tab]
-bg_color  = "#eceef1"
-fg_color  = "#aab0bb"
+bg_color  = "#e8eaee"
+fg_color  = "#9ba2ad"
 
 [colors.tab_bar.new_tab_hover]
-bg_color  = "#ffffff"
-fg_color  = "#0c7d43"
+bg_color  = "#fbfcfd"
+fg_color  = "#0c8045"
