@@ -34,5 +34,8 @@ bl.setup {
     fill = {
       fg = zero.bg,
     },
+    background = {
+      bg = zero.bg_dark,
+    },
   },
 }
