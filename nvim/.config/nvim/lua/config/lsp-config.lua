@@ -20,6 +20,7 @@ local servers = {
   { "emmet_ls" },
   { "gopls" },
   { "html" },
+  { "jedi_language_server" },
   { "ocamllsp" },
   { "rust_analyzer" },
   { "tailwindcss" },
