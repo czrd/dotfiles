@@ -30,3 +30,6 @@ command -v ng &> /dev/null && source <(ng completion script)
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/czrd/.opam/opam-init/init.zsh' ]] || source '/home/czrd/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+# Go
+export PATH=$PATH:/usr/local/go/bin
