@@ -4,7 +4,7 @@ if not ok then
   return
 end
 
-local zero = require("zero").get_palette()
+local palette = require("catppuccin.palettes").get_palette "latte"
 
 bl.setup {
   options = {
@@ -17,25 +17,31 @@ bl.setup {
   },
   highlights = {
     indicator_selected = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     indicator_visible = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     separator = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     separator_selected = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     separator_visible = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     fill = {
-      fg = zero.bg,
+      fg = palette.base,
+      bg = palette.base,
     },
     background = {
-      bg = zero.bg_dark,
+      bg = palette.base,
     },
   },
 }

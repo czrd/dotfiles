@@ -3,36 +3,19 @@ local mux = wezterm.mux
 local config = wezterm.config_builder()
 
 -- color scheme
-local appearance = wezterm.gui.get_appearance()
-if appearance:find("Dark") then
-	config.color_scheme = "zero-dark"
-	config.window_frame = {
-		inactive_titlebar_bg = "#141519",
-		active_titlebar_bg = "#141519",
-		inactive_titlebar_fg = "#141519",
-		active_titlebar_fg = "#141519",
-		inactive_titlebar_border_bottom = "#141519",
-		active_titlebar_border_bottom = "#141519",
-		button_fg = "#f4f5f7",
-		button_bg = "#141519",
-		button_hover_fg = "#f4f5f7",
-		button_hover_bg = "#141519",
-	}
-else
-	config.color_scheme = "zero-light"
-	config.window_frame = {
-		inactive_titlebar_bg = "#f4f5f7",
-		active_titlebar_bg = "#f4f5f7",
-		inactive_titlebar_fg = "#f4f5f7",
-		active_titlebar_fg = "#f4f5f7",
-		inactive_titlebar_border_bottom = "#f4f5f7",
-		active_titlebar_border_bottom = "#f4f5f7",
-		button_fg = "#9ba2ad",
-		button_bg = "#f4f5f7",
-		button_hover_fg = "#9ba2ad",
-		button_hover_bg = "#f4f5f7",
-	}
-end
+config.color_scheme = "catppuccin-latte"
+config.window_frame = {
+	inactive_titlebar_bg = "#eff1f5",
+	active_titlebar_bg = "#eff1f5",
+	inactive_titlebar_fg = "#eff1f5",
+	active_titlebar_fg = "#eff1f5",
+	inactive_titlebar_border_bottom = "#eff1f5",
+	active_titlebar_border_bottom = "#eff1f5",
+	button_fg = "#ccd0da",
+	button_bg = "#eff1f5",
+	button_hover_fg = "#ccd0da",
+	button_hover_bg = "#eff1f5",
+}
 
 -- font
 config.font_size = 15

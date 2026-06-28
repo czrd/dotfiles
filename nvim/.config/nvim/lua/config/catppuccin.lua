@@ -28,6 +28,8 @@ require("catppuccin").setup {
         NotifyWARNIcon = { fg = colors.yellow, bg = colors.base },
         NotifyWARNTitle = { fg = colors.yellow, bg = colors.base },
         NotifyWARNBorder = { fg = colors.yellow, bg = colors.base },
+        NvimTreeNormal = { link = "Normal" },
+        NvimTreeWinSeparator = { link = "FloatBorder" },
       }
     end,
   },
