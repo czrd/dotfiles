@@ -1,4 +1,4 @@
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- Modes:
@@ -54,7 +54,7 @@ keymap("n", "<C-g>", "<cmd>lua _TOGGLE_LAZYGIT()<CR>", opts)
 keymap("n", "<C-t>", "<cmd>TroubleToggle<CR>", opts)
 
 -- goto
-keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", opts)
+keymap("n", "gd", vim.lsp.buf.definition, opts)
 keymap("n", "gi", "<cmd>Lspsaga finder<CR>", opts)
 
 -- actions
