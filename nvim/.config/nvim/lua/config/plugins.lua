@@ -19,19 +19,13 @@ require("lazy").setup({
   {
     "catppuccin/nvim",
     config = function()
-      require "config/catppuccin"
+      -- require "config/catppuccin"
     end,
   },
   {
-    "czrd/zero.nvim",
-    priority = 1000,
+    "EdenEast/nightfox.nvim",
     config = function()
-      -- require("zero").setup {
-      --   plugins = {
-      --     all = true,
-      --   },
-      -- }
-      -- vim.cmd "colorscheme zero"
+      require "config/nightfox"
     end,
   },
 
@@ -90,6 +84,7 @@ require("lazy").setup({
     config = function()
       require "config/lualine"
     end,
+    priority = 100,
   },
   {
     "petertriho/nvim-scrollbar",
