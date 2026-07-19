@@ -36,3 +36,6 @@ command -v ng &> /dev/null && source <(ng completion script)
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
+
+# java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
