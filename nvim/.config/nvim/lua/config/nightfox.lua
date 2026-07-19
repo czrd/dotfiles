@@ -23,7 +23,7 @@ require("nightfox").setup {
 
       -- blink-cmp
       BlinkCmpMenuBorder = { link = "FloatBorder" },
-      BlinkCmpMenuSelection = { fg = palette.fg1, bg = palette.green.bright },
+      BlinkCmpMenuSelection = { link = "PmenuSel" },
       BlinkCmpDoc = { link = "Normal" },
       BlinkCmpDocBorder = { link = "FloatBorder" },
 
