@@ -1,20 +1,19 @@
 local wezterm = require("wezterm")
-local mux = wezterm.mux
 local config = wezterm.config_builder()
 
 -- color scheme
-config.color_scheme = "catppuccin-latte"
+config.color_scheme = "dawnfox"
 config.window_frame = {
-	inactive_titlebar_bg = "#eff1f5",
-	active_titlebar_bg = "#eff1f5",
-	inactive_titlebar_fg = "#eff1f5",
-	active_titlebar_fg = "#eff1f5",
-	inactive_titlebar_border_bottom = "#eff1f5",
-	active_titlebar_border_bottom = "#eff1f5",
-	button_fg = "#ccd0da",
-	button_bg = "#eff1f5",
-	button_hover_fg = "#ccd0da",
-	button_hover_bg = "#eff1f5",
+	inactive_titlebar_bg = "#faf4ed",
+	active_titlebar_bg = "#faf4ed",
+	inactive_titlebar_fg = "#faf4ed",
+	active_titlebar_fg = "#faf4ed",
+	inactive_titlebar_border_bottom = "#faf4ed",
+	active_titlebar_border_bottom = "#faf4ed",
+	button_fg = "#575279",
+	button_bg = "#faf4ed",
+	button_hover_fg = "#575279",
+	button_hover_bg = "#faf4ed",
 }
 
 -- font
@@ -32,10 +31,5 @@ config.scrollback_lines = 100000
 
 -- window
 config.window_close_confirmation = "NeverPrompt"
-
-wezterm.on("gui-startup", function(cmd)
-	local _, _, window = mux.spawn_window(cmd or {})
-	window:gui_window():maximize()
-end)
 
 return config
