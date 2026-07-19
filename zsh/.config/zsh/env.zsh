@@ -20,6 +20,9 @@ export PATH="$PATH:/home/czrd/.local/share/coursier/bin"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# mise
+eval "$(mise activate zsh)"
+
 # Load Angular CLI autocompletion.
 command -v ng &> /dev/null && source <(ng completion script)
 
