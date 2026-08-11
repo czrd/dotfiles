@@ -3,6 +3,6 @@ gui:
   tabWidth: 2
   theme:
     activeBorderColor:
-      - '#0c8045'
+      - '#7287fd'
     selectedLineBgColor:
-      - '#ebedf1'
+      - '#dce0e8'

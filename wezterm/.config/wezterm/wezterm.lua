@@ -2,18 +2,18 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- color scheme
-config.color_scheme = "dawnfox"
+config.color_scheme = "catppuccin-latte"
 config.window_frame = {
-	inactive_titlebar_bg = "#faf4ed",
-	active_titlebar_bg = "#faf4ed",
-	inactive_titlebar_fg = "#faf4ed",
-	active_titlebar_fg = "#faf4ed",
-	inactive_titlebar_border_bottom = "#faf4ed",
-	active_titlebar_border_bottom = "#faf4ed",
-	button_fg = "#575279",
-	button_bg = "#faf4ed",
-	button_hover_fg = "#575279",
-	button_hover_bg = "#faf4ed",
+	inactive_titlebar_bg = "#eff1f5",
+	active_titlebar_bg = "#eff1f5",
+	inactive_titlebar_fg = "#eff1f5",
+	active_titlebar_fg = "#eff1f5",
+	inactive_titlebar_border_bottom = "#eff1f5",
+	active_titlebar_border_bottom = "#eff1f5",
+	button_fg = "#6c6f85",
+	button_bg = "#eff1f5",
+	button_hover_bg = "#eff1f5",
+	button_hover_fg = "#6c6f85",
 }
 
 -- font

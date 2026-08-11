@@ -19,13 +19,13 @@ require("lazy").setup({
   {
     "catppuccin/nvim",
     config = function()
-      -- require "config/catppuccin"
+      require "config/catppuccin"
     end,
   },
   {
     "EdenEast/nightfox.nvim",
     config = function()
-      require "config/nightfox"
+      -- require "config/nightfox"
     end,
   },
 

@@ -4,15 +4,15 @@ if not ok then
   return
 end
 
-local palette = require("nightfox.palette").load "dawnfox"
+local palette = require("catppuccin.palettes").get_palette "latte"
 
 local base = {
-  a = { fg = palette.bg1, bg = palette.green.bright, gui = "bold" },
-  b = { fg = palette.fg1, bg = palette.bg2 },
-  c = { fg = palette.bg1, bg = palette.bg1 },
-  x = { fg = palette.fg1, bg = palette.bg2 },
-  y = { fg = palette.fg1, bg = palette.bg2 },
-  z = { fg = palette.fg1, bg = palette.bg2 },
+  a = { fg = palette.base, bg = palette.lavender, gui = "bold" },
+  b = { fg = palette.text, bg = palette.crust },
+  c = { fg = palette.base, bg = palette.base },
+  x = { fg = palette.text, bg = palette.crust },
+  y = { fg = palette.text, bg = palette.crust },
+  z = { fg = palette.text, bg = palette.crust },
 }
 
 local theme = {

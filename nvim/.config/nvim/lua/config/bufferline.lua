@@ -4,11 +4,11 @@ if not ok then
   return
 end
 
-local palette = require("nightfox.palette").load "dawnfox"
+local palette = require("catppuccin.palettes").get_palette "latte"
 
 local invisible = {
-  bg = palette.bg1,
-  fg = palette.bg1,
+  bg = palette.base,
+  fg = palette.base,
 }
 
 local normal = {
