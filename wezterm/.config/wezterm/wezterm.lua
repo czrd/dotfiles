@@ -19,7 +19,7 @@ config.window_frame = {
 -- font
 config.font_size = 15
 config.font = wezterm.font_with_fallback({
-	"JetBrains Mono",
+	"JetBrainsMono Nerd Font Mono",
 	"FiraMono Nerd Font",
 	"Noto Sans CJK JP",
 })
