@@ -19,7 +19,8 @@ config.window_frame = {
 -- font
 config.font_size = 12
 config.font = wezterm.font_with_fallback({
-	"MonaspiceNe Nerd Font Mono",
+	"MonaspaceNe Nerd Font Mono",
+	"Monaspace Neon NF",
 	"JetBrainsMono Nerd Font Mono",
 	"Iosevka Nerd Font",
 	"FiraMono Nerd Font",
